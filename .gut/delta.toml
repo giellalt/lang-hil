@@ -1,0 +1,10 @@
+template = ""
+rev_id = 83
+template_sha = "b5ffaef5243678a7a4ed090a10d0c1cda1a46de4"
+
+[replacements]
+__LICENSE__ = "LGPLv3"
+__REPO__ = "lang-hil"
+__UND2C__ = "hil"
+__UNDEFINED__ = "Hiligaynon"
+__UND__ = "hil"
