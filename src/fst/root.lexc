@@ -26,6 +26,8 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 !! language are presented in this system in terms of the following symbols.
 !! (It is highly suggested to follow existing standards when adding new tags).
 
+! TODO(ROB) Remove tag_test.sh from XFAIL in test/src/morphology/Makefile.am
+
 !! The parts-of-speech are:
  +N +A +Adv +V                                 !!≈
  +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
