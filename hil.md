@@ -685,7 +685,6 @@ with verbs if the verb is further derived into a noun again:
 |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
 |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
 |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
-
 For languages that allow compounding, the following flag diacritics are needed
 to control position-based compounding restrictions for nominals. Their use is
 handled automatically if combined with +CmpN/xxx tags. If not used, they will
@@ -698,7 +697,6 @@ do no harm.
 |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
 |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
 |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
-
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
@@ -710,29 +708,54 @@ The word forms in Hiligaynon language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/root.lexc)</small>
-# Symbol affixes
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/symbols.lexc)</small>Proper noun inflection
-The Hiligaynon language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/propernouns.lexc)</small>Verb inflection
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/root.lexc)</small>Verb inflection
 The Hiligaynon language verbs inflect in persons.
 
 
 
+
+
+
+
+
+
+
+* *hambal:* `hambal+V+Ind+ActV+Pfv`
+* *hambal:* `hambal+V+Ind+ActV+Cont`
+* *hambal:* `hambal+V+Ind+ActV+Ctpl`
+* *hambal:* `hambal+V+Ind+ActV+Ctpl+Cont`
+* *hambal:* `hambal+V+Ind+ObjV+Pfv`
+* *hambal:* `hambal+V+Ind+ObjV+Cont`
+* *hambal:* `hambal+V+Ind+ObjV+Ctpl`
+* *hambal:* `hambal+V+Ind+ObjV+Ctpl+Cont`
+* *hambal:* `hambal+V+Ind+InsV+Pfv`
+* *hambal:* `hambal+V+Ind+InsV+Cont`
+* *hambal:* `hambal+V+Ind+InsV+Ctpl`
+* *hambal:* `hambal+V+Ind+InsV+Ctpl+Cont`
+* *hambal:* `hambal+V+Ind+RecV+Pfv`
+* *hambal:* `hambal+V+Ind+RecV+Cont`
+* *hambal:* `hambal+V+Ind+RecV+Ctpl`
+* *hambal:* `hambal+V+Ind+RecV+Ctpl+Cont`
+
+* ★*hambal:* `hambal+V+Ind+ActV+ObjV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ActV+InsV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ActV+RecV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ObjV+InsV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ObjV+RecV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+InsV+RecV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ActV+Pfv+Cont` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ActV+Pfv+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ObjV+Pfv+Cont` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ObjV+Pfv+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+InsV+Pfv+Cont` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+InsV+Pfv+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+RecV+Pfv+Cont` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+RecV+Pfv+Ctpl` (is not standard language)
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/verbs.lexc)</small>Adjective inflection
 The Hiligaynon language adjectives compare.
+
+
 
 
 
@@ -768,13 +791,7 @@ Pronouns in the Hiligaynon language are references to things.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/pronouns.lexc)</small>Prefixes
-Prefixes in the Hiligaynon language are bound to beginning of other words.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/prefixes.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/pronouns.lexc)</small>
 
 
 We describe here how abbreviations are in Hiligaynon are read out, e.g.
