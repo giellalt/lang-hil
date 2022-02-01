@@ -2,10 +2,16 @@
 !  --------------------
 !! The Hiligaynon language adjectives compare.
 
-LEXICON Comparisons
-+A+pos:0        Cases   ;
-+A+cmp:er       Cases   ;
-+A+sup:est      Cases   ;
+LEXICON Adj_Prefix
+@U.ADJ.PRE@:@U.ADJ.PRE@ma Adj_Root ;
+@U.ADJ.CIR@:@U.ADJ.CIR@ma Adj_Root ;
+
+LEXICON Adj
+Adj_Suffix ;
+@U.ADJ.PRE@+A:@U.ADJ.PRE@ # ;
+
+LEXICON Adj_Suffix
++A:%>on # ;
 
 ! vim: set ft=xfst-lexc:
 

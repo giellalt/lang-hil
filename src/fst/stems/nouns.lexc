@@ -2,7 +2,19 @@
 !  -----
 !! Nouns in the Hiligaynon language are things.
 
-LEXICON Nouns
-noun    Cases   ;
+LEXICON Noun_Root
+adlaw # "day" ;
+babaye # "woman" ;
+balay # "house" ;
+bata # "child" ;
+kan-on # "rice" ;
+lalaki # "man" ;
+libro # "book" ;
+mangga # "mango" ;
+pamilya # "family" ;
+saging # "banana" ;
+tawo # "person" ;
+tigulang # "elder" ;
+tubig # "water" ;
 
 ! vim: set ft=xfst-lexc:

@@ -12,19 +12,14 @@ elif test "x$GIELLA_CORE" != "x" -a -d "$GIELLA_CORE" ; then
     giella_core=$GIELLA_CORE
 elif test "x$GTCORE" != "x" -a -d "$GTCORE" ; then
     giella_core=$GTCORE
-else	
+else
     echo "ERROR: Neither of $$GIELLA_CORE, $$GTCORE or $$GTLANGS defined, and nothing found within the parent folder."
     exit 1
 fi
 
 ######### USER Variables - change these to your liking: #########
 # Codes for the word forms to be generated - list as many or few as needed:
-morf_codes="+A+Sg+Nom \
-            +A+Sg+Gen \
-            +A+Sg+Ill \
-            +A+Pl+Nom \
-            +A+Pl+Com \
-            +A+Attr"
+morf_codes="+A"
 
 # Lexicon source file for lexicons and lemmas:
 source_file=src/morphology/stems/adjectives.lexc

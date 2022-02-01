@@ -2,7 +2,7 @@
 !  --------
 !! Numerals in the Hiligaynon language are numbers.
 
-LEXICON Numerals
-numeral    Cases   ;
+!LEXICON Numerals
+!numeral    Cases   ;
 
 ! vim: set ft=xfst-lexc:

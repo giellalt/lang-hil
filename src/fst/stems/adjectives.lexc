@@ -2,7 +2,15 @@
 !  ----------
 !! Adjectives in the Hiligaynon language describe things.
 
-LEXICON Adjectives
-adjective    Comparisons   ;
+LEXICON Adj_Root
+lipay Adj "happy" ;
+subo Adj "sad" ;
+akig Adj "angry" ;
+dasig Adj "fast" ;
+hinay Adj "slow" ;
+dako Adj "big" ;
+gamay Adj "small" ;
+damo Adj "many" ;
+diutay Adj "few" ;
 
 ! vim: set ft=xfst-lexc:

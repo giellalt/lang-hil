@@ -3,6 +3,30 @@
 !! Pronouns in the Hiligaynon language are references to things.
 
 LEXICON Pronouns
-pronoun    Cases   ;
+ako+Nom+1sg:ako # ;
+ka+Nom+2sg:ka # ;
+ikaw+Nom+2sg:ikaw # ;
+siya+Nom+3sg:siya # ;
+kita+Nom+1pl+Incl:kita # ;
+kami+Nom+1pl+Excl:kami # ;
+kamo+Nom+2pl:kamo # ;
+sila+Nom+3pl:sila # ;
+ko+Obl+1sg:ko # ;
+nakon+Obl+1sg:nakon # ;
+mo+Obl+2sg:mo # ;
+nimo+Obl+2sg:nimo # ;
+niya+Obl+3sg:niya # ;
+naton+Obl+1pl+Incl:naton # ;
+namon+Obl+1pl+Excl:namon # ;
+ninyo+Obl+2pl:ninyo # ;
+nyo+Obl+2pl:nyo # ;
+nila+Obl+3pl:nila # ;
+akon+Loc+1sg:akon # ;
+imo+Loc+2sg:imo # ;
+iya+Loc+3sg:iya # ;
+aton+Loc+1pl+Incl:aton # ;
+amon+Loc+1pl+Excl:amon # ;
+inyo+Loc+2pl:inyo # ;
+ila+Loc+3pl:ila # ;
 
 ! vim: set ft=xfst-lexc:

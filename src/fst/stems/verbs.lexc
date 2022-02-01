@@ -2,7 +2,34 @@
 !  -----
 !! Verbs in the Hiligaynon language are actions.
 
-LEXICON Verbs
-verb    Persons   ;
+LEXICON Verb_Root
+bakal Voice "buy" ;
+baligya Voice "sell" ;
+balik Voice "return" ;
+basa Voice "read" ;
+baton Voice "receive" ;
+bulig Voice "help" ;
+dala Voice "bring" ;
+gamit Voice "use" ;
+hambal Voice "speak" ;
+hatag Voice "give" ;
+inom Voice "drink" ;
+kadto Voice "go" ;
+kanta Voice "sing" ;
+kaon Voice "eat" ;
+kuha Voice "take" ;
+lakat Voice "walk" ;
+lantaw Voice "watch" ;
+luto Voice "cook" ;
+palapit Voice "approach" ;
+pamangkot Voice "ask" ;
+sabat Voice "answer" ;
+sulat Voice "write" ;
+sunod Voice "follow" ;
+tawag Voice "call" ;
+tudlo Voice "teach" ;
+tulog Voice "sleep" ;
+tulok Voice "look" ;
+tuon Voice "study" ;
 
 ! vim: set ft=xfst-lexc:
