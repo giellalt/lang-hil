@@ -39,23 +39,50 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
  +Err/Orth
  +Use/-Spell
 
-!! The nominals are inflected in the following Case and Number
- +Sg +Du +Pl
- +Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh
+!! Article Tags
++Nom  !Nominative
++Obl  !Oblique
++Loc  !Locative
++Lig  !Ligiture
++Pl   !Plural
++Pers !Personal name
+
+!! Pronoun Tags
++1sg !1st person singular
++2sg !2nd person singular
++3sg !3rd person singular
++1pl !1st person plural
++2pl !2nd person plural
++3pl !3rd person plural
++Incl !Inclusive
++Excl !Exclusive
 
 !! The possession is marked as such:
- +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
+ +PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3
 !! The comparative forms are:
  +Comp +Superl
 !! Numerals are classified under:
  +Attr +Card
  +Ord
 !! Verb moods are:
- +Ind +Prs +Prt +Pot +Cond +Imprt
-!! Verb personal forms are:
- +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
+ +Ind +Pot +Cond +Imprt
+!! Verb voices are:
++ActV @U.VOICE.ACT@ !Actor voice
++ObjV @U.VOICE.OBJ@ !Object voice
++InsV @U.VOICE.INS@ !Instrumental voice
++RecV @U.VOICE.REC@ !Recipient voice
+!! Verb Aspects are:
++Pfv @U.ASPECT.PFV@ !Perfective aspect
++Cont @U.ASPECT.CON@ !Continuous aspect
++Ctpl @U.ASPECT.CTP@ !Contemplative aspect
+@U.ASPECT.CTC@ !Contemplative continuous aspect
 !! Other verb forms are
- +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
+ +Recipr !!Reciprocal
+ +Ger    !!Gerund
+
+!! Adjective Tags
+@U.ADJ.PRE@ !Adjective prefix
+@U.ADJ.CIR@ !Adjective circumfix
 
 ! Abbreviated words are classified with:
  +ABBR +ACR
@@ -139,7 +166,7 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 LEXICON Root
 !! The word forms in Hiligaynon language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
-    Articles    ;
+    Articles    ; !! TODO Change this throughout to Particles
     Nouns       ;
     Verbs       ;
     Adjectives  ;
