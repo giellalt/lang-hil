@@ -16,14 +16,19 @@ The parts of speech are further split up into:
 
 The Usage extents are marked using following tags:
 
-The nominals are inflected in the following Case and Number
+Article Tags
+
+Pronoun Tags
 
 The possession is marked as such:
 The comparative forms are:
 Numerals are classified under:
 Verb moods are:
-Verb personal forms are:
+Verb voices are:
+Verb Aspects are:
 Other verb forms are
+
+Adjective Tags
 
 * +Symbol = independent symbols in the text stream, like £, €, ©
 Special symbols are classified with:
@@ -75,6 +80,7 @@ given the proper use of these flags.
 
 The word forms in Hiligaynon language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
+TODO Change this throughout to Particles
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/root.lexc)</small>

@@ -630,7 +630,90 @@ The Hiligaynon morphophonological/twolc rules file !
 
 * examples:*
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/phonology.twolc)</small>
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/phonology.twolc)</small>Nouns
+Nouns in the Hiligaynon language are things.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/nouns.lexc)</small>Pronouns
+Pronouns in the Hiligaynon language are references to things.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/pronouns.lexc)</small>Numerals
+Numerals in the Hiligaynon language are numbers.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/numerals.lexc)</small>Adjectives
+Adjectives in the Hiligaynon language describe things.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/adjectives.lexc)</small>Verbs
+Verbs in the Hiligaynon language are actions.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/verbs.lexc)</small>Noun inflection
+The Hiligaynon language nouns inflect in cases.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/nouns.lexc)</small>Adjective inflection
+The Hiligaynon language adjectives compare.
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/adjectives.lexc)</small>Verb inflection
+The Hiligaynon language verbs inflect in persons.
+
+
+
+
+
+
+
+
+
+
+* *hambal:* `hambal+V+Ind+ActV+Pfv`
+* *hambal:* `hambal+V+Ind+ActV+Cont`
+* *hambal:* `hambal+V+Ind+ActV+Ctpl`
+* *hambal:* `hambal+V+Ind+ActV+Ctpl+Cont`
+* *hambal:* `hambal+V+Ind+ObjV+Pfv`
+* *hambal:* `hambal+V+Ind+ObjV+Cont`
+* *hambal:* `hambal+V+Ind+ObjV+Ctpl`
+* *hambal:* `hambal+V+Ind+ObjV+Ctpl+Cont`
+* *hambal:* `hambal+V+Ind+InsV+Pfv`
+* *hambal:* `hambal+V+Ind+InsV+Cont`
+* *hambal:* `hambal+V+Ind+InsV+Ctpl`
+* *hambal:* `hambal+V+Ind+InsV+Ctpl+Cont`
+* *hambal:* `hambal+V+Ind+RecV+Pfv`
+* *hambal:* `hambal+V+Ind+RecV+Cont`
+* *hambal:* `hambal+V+Ind+RecV+Ctpl`
+* *hambal:* `hambal+V+Ind+RecV+Ctpl+Cont`
+
+* ★*hambal:* `hambal+V+Ind+ActV+ObjV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ActV+InsV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ActV+RecV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ObjV+InsV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ObjV+RecV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+InsV+RecV+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ActV+Pfv+Cont` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ActV+Pfv+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ObjV+Pfv+Cont` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+ObjV+Pfv+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+InsV+Pfv+Cont` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+InsV+Pfv+Ctpl` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+RecV+Pfv+Cont` (is not standard language)
+* ★*hambal:* `hambal+V+Ind+RecV+Pfv+Ctpl` (is not standard language)
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/verbs.lexc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Hiligaynon LANGUAGE.
 
 
@@ -648,14 +731,19 @@ The parts of speech are further split up into:
 
 The Usage extents are marked using following tags:
 
-The nominals are inflected in the following Case and Number
+Article Tags
+
+Pronoun Tags
 
 The possession is marked as such:
 The comparative forms are:
 Numerals are classified under:
 Verb moods are:
-Verb personal forms are:
+Verb voices are:
+Verb Aspects are:
 Other verb forms are
+
+Adjective Tags
 
 * +Symbol = independent symbols in the text stream, like £, €, ©
 Special symbols are classified with:
@@ -707,109 +795,10 @@ given the proper use of these flags.
 
 The word forms in Hiligaynon language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
+TODO Change this throughout to Particles
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/root.lexc)</small>Verb inflection
-The Hiligaynon language verbs inflect in persons.
-
-
-
-
-
-
-
-
-
-
-* *hambal:* `hambal+V+Ind+ActV+Pfv`
-* *hambal:* `hambal+V+Ind+ActV+Cont`
-* *hambal:* `hambal+V+Ind+ActV+Ctpl`
-* *hambal:* `hambal+V+Ind+ActV+Ctpl+Cont`
-* *hambal:* `hambal+V+Ind+ObjV+Pfv`
-* *hambal:* `hambal+V+Ind+ObjV+Cont`
-* *hambal:* `hambal+V+Ind+ObjV+Ctpl`
-* *hambal:* `hambal+V+Ind+ObjV+Ctpl+Cont`
-* *hambal:* `hambal+V+Ind+InsV+Pfv`
-* *hambal:* `hambal+V+Ind+InsV+Cont`
-* *hambal:* `hambal+V+Ind+InsV+Ctpl`
-* *hambal:* `hambal+V+Ind+InsV+Ctpl+Cont`
-* *hambal:* `hambal+V+Ind+RecV+Pfv`
-* *hambal:* `hambal+V+Ind+RecV+Cont`
-* *hambal:* `hambal+V+Ind+RecV+Ctpl`
-* *hambal:* `hambal+V+Ind+RecV+Ctpl+Cont`
-
-* ★*hambal:* `hambal+V+Ind+ActV+ObjV+Ctpl` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+ActV+InsV+Ctpl` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+ActV+RecV+Ctpl` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+ObjV+InsV+Ctpl` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+ObjV+RecV+Ctpl` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+InsV+RecV+Ctpl` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+ActV+Pfv+Cont` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+ActV+Pfv+Ctpl` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+ObjV+Pfv+Cont` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+ObjV+Pfv+Ctpl` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+InsV+Pfv+Cont` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+InsV+Pfv+Ctpl` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+RecV+Pfv+Cont` (is not standard language)
-* ★*hambal:* `hambal+V+Ind+RecV+Pfv+Ctpl` (is not standard language)
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/verbs.lexc)</small>Adjective inflection
-The Hiligaynon language adjectives compare.
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/adjectives.lexc)</small>Noun inflection
-The Hiligaynon language nouns inflect in cases.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/nouns.lexc)</small>Verbs
-Verbs in the Hiligaynon language are actions.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/verbs.lexc)</small>Adjectives
-Adjectives in the Hiligaynon language describe things.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/adjectives.lexc)</small>Numerals
-Numerals in the Hiligaynon language are numbers.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/numerals.lexc)</small>Nouns
-Nouns in the Hiligaynon language are things.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/nouns.lexc)</small>Pronouns
-Pronouns in the Hiligaynon language are references to things.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/stems/pronouns.lexc)</small>
-
-
-We describe here how abbreviations are in Hiligaynon are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
-* s.:syntynyt # ;  
-* os.:omaa% sukua # ;  
-* v.:vuosi # ;  
-* v.:vuonna # ;  
-* esim.:esimerkki # ; 
-* esim.:esimerkiksi # ; 
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/root.lexc)</small>
 
 
 
@@ -865,3 +854,20 @@ For example:
 
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+
+
+We describe here how abbreviations are in Hiligaynon are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+* s.:syntynyt # ;  
+* os.:omaa% sukua # ;  
+* v.:vuosi # ;  
+* v.:vuonna # ;  
+* esim.:esimerkki # ; 
+* esim.:esimerkiksi # ; 
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
