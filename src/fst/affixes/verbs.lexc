@@ -37,47 +37,49 @@ LEXICON Voice
 @U.VOICE.INS@+V+Ind+InsV:@U.VOICE.INS@ Aspect ;
 @U.VOICE.REC@+V+Ind+RecV:@U.VOICE.REC@%>an Aspect ;
 @U.VOICE.OBJ@@U.ASPECT.PFV@+V+Ind+ObjV+Pfv:@U.VOICE.OBJ@@U.ASPECT.PFV@ # ;
-@U.VOICE.OBJ@@U.ASPECT.CON@+V+Ind+ObjV+Con:@U.VOICE.OBJ@@U.ASPECT.CON@ # ;
-@U.VOICE.OBJ@@U.ASPECT.CTP@+V+Ind+ObjV+Ctp:@U.VOICE.OBJ@@U.ASPECT.CTP@%>on # ;
-@U.VOICE.OBJ@@U.ASPECT.CTC@+V+Ind+ObjV+Ctp+Con:@U.VOICE.OBJ@@U.ASPECT.CTC@%>on # ;
+@U.VOICE.OBJ@@U.ASPECT.CON@+V+Ind+ObjV+Cont:@U.VOICE.OBJ@@U.ASPECT.CON@ # ;
+@U.VOICE.OBJ@@U.ASPECT.CTP@+V+Ind+ObjV+Ctpl:@U.VOICE.OBJ@@U.ASPECT.CTP@%>on # ;
+@U.VOICE.OBJ@@U.ASPECT.CTC@+V+Ind+ObjV+Ctpl+Cont:@U.VOICE.OBJ@@U.ASPECT.CTC@%>on # ;
 
 LEXICON Aspect
 @U.ASPECT.PFV@+Pfv:@U.ASPECT.PFV@ # ;
-@U.ASPECT.CON@+Con:@U.ASPECT.CON@ # ;
-@U.ASPECT.CTP@+Ctp:@U.ASPECT.CTP@ # ;
-@U.ASPECT.CTC@+Ctp+Con:@U.ASPECT.CTC@ # ;
+@U.ASPECT.CON@+Cont:@U.ASPECT.CON@ # ;
+@U.ASPECT.CTP@+Ctpl:@U.ASPECT.CTP@ # ;
+@U.ASPECT.CTC@+Ctpl+Cont:@U.ASPECT.CTC@ # ;
 
 
 ! vim: set ft=xfst-lexc:
 
-!!€ hambal:    hambal+V+Ind+ActV+Pfv
-!!€ hambal:    hambal+V+Ind+ActV+Cont
-!!€ hambal:    hambal+V+Ind+ActV+Ctpl
-!!€ hambal:    hambal+V+Ind+ActV+Ctpl+Cont
-!!€ hambal:    hambal+V+Ind+ObjV+Pfv
-!!€ hambal:    hambal+V+Ind+ObjV+Cont
-!!€ hambal:    hambal+V+Ind+ObjV+Ctpl
-!!€ hambal:    hambal+V+Ind+ObjV+Ctpl+Cont
-!!€ hambal:    hambal+V+Ind+InsV+Pfv
-!!€ hambal:    hambal+V+Ind+InsV+Cont
-!!€ hambal:    hambal+V+Ind+InsV+Ctpl
-!!€ hambal:    hambal+V+Ind+InsV+Ctpl+Cont
-!!€ hambal:    hambal+V+Ind+RecV+Pfv
-!!€ hambal:    hambal+V+Ind+RecV+Cont
-!!€ hambal:    hambal+V+Ind+RecV+Ctpl
-!!€ hambal:    hambal+V+Ind+RecV+Ctpl+Cont
+!!€gt-norm: Verbs
+!!€ naghambal:    hambal+V+Ind+ActV+Pfv
+!!€ nagahambal:    hambal+V+Ind+ActV+Cont
+!!€ maghambal:    hambal+V+Ind+ActV+Ctpl
+!!€ magahambal:    hambal+V+Ind+ActV+Ctpl+Cont
+!!€ ginhambal:    hambal+V+Ind+ObjV+Pfv
+!!€ ginahambal:    hambal+V+Ind+ObjV+Cont
+!!€ hambalon:    hambal+V+Ind+ObjV+Ctpl
+!!€ pagahambalon:    hambal+V+Ind+ObjV+Ctpl+Cont
+!!€ ginhambal:    hambal+V+Ind+InsV+Pfv
+!!€ ginahambal:    hambal+V+Ind+InsV+Cont
+!!€ ihambal:    hambal+V+Ind+InsV+Ctpl
+!!€ igahambal:    hambal+V+Ind+InsV+Ctpl+Cont
+!!€ ginhambalan:    hambal+V+Ind+RecV+Pfv
+!!€ ginahambalan:    hambal+V+Ind+RecV+Cont
+!!€ hambalan:    hambal+V+Ind+RecV+Ctpl
+!!€ pagahambalan:    hambal+V+Ind+RecV+Ctpl+Cont
 
-!!$ hambal:    hambal+V+Ind+ActV+ObjV+Ctpl
-!!$ hambal:    hambal+V+Ind+ActV+InsV+Ctpl
-!!$ hambal:    hambal+V+Ind+ActV+RecV+Ctpl
-!!$ hambal:    hambal+V+Ind+ObjV+InsV+Ctpl
-!!$ hambal:    hambal+V+Ind+ObjV+RecV+Ctpl
-!!$ hambal:    hambal+V+Ind+InsV+RecV+Ctpl
-!!$ hambal:    hambal+V+Ind+ActV+Pfv+Cont
-!!$ hambal:    hambal+V+Ind+ActV+Pfv+Ctpl
-!!$ hambal:    hambal+V+Ind+ObjV+Pfv+Cont
-!!$ hambal:    hambal+V+Ind+ObjV+Pfv+Ctpl
-!!$ hambal:    hambal+V+Ind+InsV+Pfv+Cont
-!!$ hambal:    hambal+V+Ind+InsV+Pfv+Ctpl
-!!$ hambal:    hambal+V+Ind+RecV+Pfv+Cont
-!!$ hambal:    hambal+V+Ind+RecV+Pfv+Ctpl
+!!$gt-desc: Verbs
+!!$ maghambalon:    hambal+V+Ind+ActV+ObjV+Ctpl
+!!$ magihambal:    hambal+V+Ind+ActV+InsV+Ctpl
+!!$ maghambalan:    hambal+V+Ind+ActV+RecV+Ctpl
+!!$ ihambalon:    hambal+V+Ind+ObjV+InsV+Ctpl
+!!$ hambalonan:    hambal+V+Ind+ObjV+RecV+Ctpl
+!!$ ihambalan:    hambal+V+Ind+InsV+RecV+Ctpl
+!!$ naganaghambal:    hambal+V+Ind+ActV+Pfv+Cont
+!!$ nagmaghambal:    hambal+V+Ind+ActV+Pfv+Ctpl
+!!$ ginginahambal:    hambal+V+Ind+ObjV+Pfv+Cont
+!!$ ginhambalon:    hambal+V+Ind+ObjV+Pfv+Ctpl
+!!$ ginihambal:    hambal+V+Ind+InsV+Pfv+Cont
+!!$ ginihambal:    hambal+V+Ind+InsV+Pfv+Ctpl
+!!$ ginginahambalan:    hambal+V+Ind+RecV+Pfv+Cont
+!!$ ginhambalan:    hambal+V+Ind+RecV+Pfv+Ctpl
