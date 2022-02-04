@@ -9,5 +9,8 @@
 * [src-fst-affixes-adjectives.lexc.md](src-fst-affixes-adjectives.lexc.md)
 * [src-fst-affixes-verbs.lexc.md](src-fst-affixes-verbs.lexc.md)
 * [src-fst-root.lexc.md](src-fst-root.lexc.md)
+* [src-phonetics-txt2ipa.xfscript.md](src-phonetics-txt2ipa.xfscript.md)
 * [src-transcriptions-transcriptor-numbers-digit2text.lexc.md](src-transcriptions-transcriptor-numbers-digit2text.lexc.md)
 * [src-transcriptions-transcriptor-abbrevs2text.lexc.md](src-transcriptions-transcriptor-abbrevs2text.lexc.md)
+* [tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md](tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md)
+* [tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md](tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md)
