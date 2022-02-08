@@ -1,9 +1,28 @@
+!!TODO Change this lexc file to be called particles??
 LEXICON Articles
 ang+Nom:ang # ;
 sang+Obl:sang # ;
+sing+Obl+Abst:sing # ;
 sa+Loc:sa # ;
 nga+Lig:nga # ;
 mga+Pl:mga # ;
 si+Nom+Pers:si # ;
 ni+Obl+Pers:ni # ;
 kay+Loc+Pers:kay # ;
+
+LEXICON Conjunctions
+kag+CC:kag # "and" ;
+kon+Cond:kon # "if" ;
+pero+CC:pero # "but" ;
+apang+CC:apang # "but" ;
+gani+CC:gani # "therefore" ;
+tungod+CC:tungod # "because" ;
+ukon+CC:ukon # "or" ;
+kundi+CC:kundi # "rather" ;
+agud+CC:agud # "in order to" ;
+
+LEXICON Particles
+wala+Neg:wala # "none" ;
+indi+Neg:indi # "no" ;
+bala+Qst:bala # ;
+ba+Qst:ba # ;

@@ -39,13 +39,16 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
  +Err/Orth
  +Use/-Spell
 
-!! Article Tags
+!! Particle Tags
 +Nom  !Nominative
 +Obl  !Oblique
 +Loc  !Locative
 +Lig  !Ligiture
 +Pl   !Plural
 +Pers !Personal name
++Abst !Abstract
++Neg  !Negator
++Cond !Conditional
 
 !! Pronoun Tags
 +1sg !1st person singular
@@ -57,6 +60,11 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 +Incl !Inclusive
 +Excl !Exclusive
 
+!! Demonstrative Tags
++Prox !Proximal
++Med  !Medial
++Dist !Distal
+
 !! The possession is marked as such:
  +PxSg1 +PxSg2 +PxSg3 +PxPl1 +PxPl2 +PxPl3
 !! The comparative forms are:
@@ -65,7 +73,7 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
  +Attr +Card
  +Ord
 !! Verb moods are:
- +Ind +Pot +Cond +Imprt
+ +Ind +Pot +Imprt
 !! Verb voices are:
 +ActV @U.VOICE.ACT@ !Actor voice
 +ObjV @U.VOICE.OBJ@ !Object voice
