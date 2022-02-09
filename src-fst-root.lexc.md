@@ -1,7 +1,6 @@
 
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Hiligaynon LANGUAGE.
 
-
 # Definitions for Multichar_Symbols
 
 ## Analysis symbols
@@ -9,16 +8,17 @@ The morphological analyses of wordforms for the Hiligaynon
 language are presented in this system in terms of the following symbols.
 (It is highly suggested to follow existing standards when adding new tags).
 
-
 The parts-of-speech are:
 
 The parts of speech are further split up into:
 
 The Usage extents are marked using following tags:
 
-Article Tags
+Particle Tags
 
 Pronoun Tags
+
+Demonstrative Tags
 
 The possession is marked as such:
 The comparative forms are:
@@ -38,13 +38,10 @@ Non-dictionary words can be recognised with:
 
 Question and Focus particles:
 
-
 Semantics are classified with
-
 
 Derivations are classified under the morphophonetic form of the suffix, the
 source and target part-of-speech.
-
 
 Morphophonology
 To represent phonologic variations in word forms we use the following
@@ -78,9 +75,15 @@ given the proper use of these flags.
 |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
 |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
+Orthography
+
 The word forms in Hiligaynon language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 TODO Change this throughout to Particles
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-hil/blob/main/src/fst/root.lexc)</small>
+
+---
+

@@ -1,16 +1,6 @@
 Verb inflection
 The Hiligaynon language verbs inflect in persons.
 
-
-
-
-
-
-
-
-
-
-
 *Verbs examples:*
 * *naghambal:* `hambal+V+Ind+ActV+Pfv`
 * *nagahambal:* `hambal+V+Ind+ActV+Cont`
@@ -29,7 +19,6 @@ The Hiligaynon language verbs inflect in persons.
 * *hambalan:* `hambal+V+Ind+RecV+Ctpl`
 * *pagahambalan:* `hambal+V+Ind+RecV+Ctpl+Cont`
 
-
 *Verbs examples:*
 * ★*maghambalon:* `hambal+V+Ind+ActV+ObjV+Ctpl` (is not standard language)
 * ★*magihambal:* `hambal+V+Ind+ActV+InsV+Ctpl` (is not standard language)
@@ -45,5 +34,32 @@ The Hiligaynon language verbs inflect in persons.
 * ★*ginihambal:* `hambal+V+Ind+InsV+Pfv+Ctpl` (is not standard language)
 * ★*ginginahambalan:* `hambal+V+Ind+RecV+Pfv+Cont` (is not standard language)
 * ★*ginhambalan:* `hambal+V+Ind+RecV+Pfv+Ctpl` (is not standard language)
+
+*Reduplication examples:*
+* *naghambal-hambal:* `hambal+V+Ind+ActV+Pfv+Iter`
+* *naghambal-hambal:* `hambal+V+Ind+ActV+Pfv+Aug`
+* *naghambal-hambal:* `hambal+V+Ind+ActV+Pfv+Dim`
+* *nagahambal-hambal:* `hambal+V+Ind+ActV+Cont+Iter`
+* *nagahambal-hambal:* `hambal+V+Ind+ActV+Cont+Aug`
+* *nagahambal-hambal:* `hambal+V+Ind+ActV+Cont+Dim`
+* *maghambal-hambal:* `hambal+V+Ind+ActV+Ctpl+Iter`
+* *maghambal-hambal:* `hambal+V+Ind+ActV+Ctpl+Aug`
+* *maghambal-hambal:* `hambal+V+Ind+ActV+Ctpl+Dim`
+* *magahambal-hambal:* `hambal+V+Ind+ActV+Ctpl+Cont+Iter`
+* *magahambal-hambal:* `hambal+V+Ind+ActV+Ctpl+Cont+Aug`
+* *magahambal-hambal:* `hambal+V+Ind+ActV+Ctpl+Cont+Dim`
+* *magadala-dalagan:* `dalagan+V+Ind+ActV+Ctpl+Cont+Dim`
+
+*Reduplication examples:*
+* ★*magadalagan-dalagan:* `dalagan+V+Ind+ActV+Ctpl+Cont+Dim` (is not standard language)
+* ★*magadalag-dalagan:* `dalagan+V+Ind+ActV+Ctpl+Cont+Dim` (is not standard language)
+* ★*magadalagan-dala:* `dalagan+V+Ind+ActV+Ctpl+Cont+Dim` (is not standard language)
+* ★*magadal-dalagan:* `dalagan+V+Ind+ActV+Ctpl+Cont+Dim` (is not standard language)
+* ★*magadaladalagan:* `dalagan+V+Ind+ActV+Ctpl+Cont+Dim` (is not standard language)
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-hil/blob/main/../src/fst/affixes/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-hil/blob/main/src/fst/affixes/verbs.lexc)</small>
+
+---
+
