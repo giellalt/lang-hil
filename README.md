@@ -3,7 +3,7 @@ The Hiligaynon morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-hil)](https://github.com/giellalt/lang-hil/issues)
 [![Build Status](https://github.com/giellalt/lang-hil/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-hil/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-hil)](https://github.com//giellalt/lang-hil/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-hil)](https://github.com/giellalt/lang-hil/blob/main/LICENSE)
 
 This repository contains finite state source files for the Hiligaynon language,
 for building morphological analysers, proofing tools
