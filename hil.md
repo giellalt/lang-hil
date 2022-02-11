@@ -293,6 +293,8 @@ Verb voices are:
 Verb Aspects are:
 Other verb forms are
 
+Reduplication
+
 Adjective Tags
 
 * +Symbol = independent symbols in the text stream, like £, €, ©
