@@ -3,6 +3,10 @@
 !! Verbs in the Hiligaynon language are actions.
 
 LEXICON Verb_Root
++CVRed:%^C1%^V1%< VRoot ; !TODO change to flag diacritic
+:%< VRoot ;
+
+LEXICON VRoot
 bakal Voice "buy" ;
 baligya Voice "sell" ;
 balik Voice "return" ;

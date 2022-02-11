@@ -8,7 +8,13 @@ Alphabet
 
  %>:0
  %^N:ng
- %^K:0 ;
+ %^K:0
+ %^C1:0
+ %^C2:0
+ %^C3:0
+ %^C4:0
+ %^V1:0
+ %^V2:0 ;
 
 Sets
 
@@ -28,3 +34,16 @@ Rules
 
 "^N:m Nasal assimilation"
 %^N:m <=> _ [ p | b ] ;
+
+"C1 reduplication"
+%^C1:Cx <=> _ %^V1: ?* %<:0 :Cx ;
+      where Cx in Cns ;
+
+"V1 reduplication"
+%^V1:Vx <=> ( %^C1: ) _ ?* %<:0 ( Cns: ) Vx ;
+      where Vx in Vow ;
+
+!"C2 reduplication"
+
+!"V2 reduplication"
+

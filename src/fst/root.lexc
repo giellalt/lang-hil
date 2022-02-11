@@ -86,6 +86,15 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
  +Recipr !!Reciprocal
  +Ger    !!Gerund
 
+!! Reduplication
++CVRed !CV Reduplication !TODO delete later, change to syntactic property
+%^C1 !First consonant reduplication
+%^C2 !Second consonant reduplication
+%^C3 !Third consonant reduplication
+%^C4 !Fourth consonant reduplication
+%^V1 !First vowel reduplication
+%^V2 !Second vowel reduplication
+
 !! Adjective Tags
 @U.ADJ.PRE@ !Adjective prefix
 @U.ADJ.CIR@ !Adjective circumfix
