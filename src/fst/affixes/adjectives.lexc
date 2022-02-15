@@ -5,6 +5,9 @@
 LEXICON Adj_Prefix
 @U.ADJ.PRE@:@U.ADJ.PRE@ma Adj_Root ;
 @U.ADJ.CIR@:@U.ADJ.CIR@ma Adj_Root ;
+Adj_Root ;
+Adj_Uninflected ;
+Adv_Root ;
 
 LEXICON Adj
 Adj_Suffix ;

@@ -42,10 +42,16 @@ LEXICON Voice
 @U.VOICE.OBJ@@U.ASPECT.CTC@+V+Ind+ObjV+Ctpl+Cont:@U.VOICE.OBJ@@U.ASPECT.CTC@%>on # ;
 
 LEXICON Aspect
-@U.ASPECT.PFV@+Pfv:@U.ASPECT.PFV@ # ;
-@U.ASPECT.CON@+Cont:@U.ASPECT.CON@ # ;
-@U.ASPECT.CTP@+Ctpl:@U.ASPECT.CTP@ # ;
-@U.ASPECT.CTC@+Ctpl+Cont:@U.ASPECT.CTC@ # ;
+@U.ASPECT.PFV@+Pfv:@U.ASPECT.PFV@       Reduplication ;
+@U.ASPECT.CON@+Cont:@U.ASPECT.CON@      Reduplication ;
+@U.ASPECT.CTP@+Ctpl:@U.ASPECT.CTP@      Reduplication ;
+@U.ASPECT.CTC@+Ctpl+Cont:@U.ASPECT.CTC@ Reduplication ;
+
+LEXICON Reduplication
+@U.REDUPLICATION.AUG@+Aug:@U.REDUPLICATION.AUG@ # ;
+@U.REDUPLICATION.DIM@+Dim:@U.REDUPLICATION.DIM@ # ;
+@U.REDUPLICATION.REP@+Iter:@U.REDUPLICATION.REP@ # ;
+
 
 
 ! vim: set ft=xfst-lexc:
