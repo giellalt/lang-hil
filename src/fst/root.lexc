@@ -187,6 +187,8 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
  %< !Left stem boundary
  %^N !Nasal archiphoneme
  %^K !Glottal stop
+ Ng  !Engma (capital)
+ ng  !Engma (lowercase)
 
 
 

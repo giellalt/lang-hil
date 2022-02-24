@@ -28,6 +28,7 @@ kuha Voice "take" ;
 lakat Voice "walk" ;
 lantaw Voice "watch" ;
 luto Voice "cook" ;
+nguy-ab Voice "yawn" ;
 palapit Voice "approach" ;
 pamangkot Voice "ask" ;
 sabat Voice "answer" ;
