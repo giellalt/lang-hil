@@ -3,8 +3,21 @@
 import re
 from zipfile import ZipFile
 
-trans_table = [('á', 'á'),
-               ('í', 'í')]
+trans_table = [('á', 'a\u0301'),
+               ('à', 'a\u0300'),
+               ('â', 'a\u0302'),
+               ('é', 'e\u0301'),
+               ('è', 'e\u0300'),
+               ('ê', 'e\u0302'),
+               ('í', 'i\u0301'),
+               ('ì', 'i\u0300'),
+               ('î', 'i\u0302'),
+               ('ó', 'o\u0301'),
+               ('ò', 'o\u0300'),
+               ('ô', 'o\u0302'),
+               ('ú', 'u\u0301'),
+               ('ù', 'u\u0300'),
+               ('û', 'u\u0302')]
 
 lines = []
 with ZipFile('DictionaryForMIDs/DictionaryForMIDs_HilEng_KVED.jar') as zf:
