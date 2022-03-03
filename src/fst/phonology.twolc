@@ -43,33 +43,36 @@ Rules
 !Max Syllable structure: (C1) (C2) V1 (C3) . (C4) (C5) V2 (C6)
 
 "C1 reduplication"
-%^C1:Cx <=> _ %^C2: %^V1: %^C3: %^C4: %^C5: %^V2: %^C6: %<:0 Cx ;
+%^C1:Cx <=> _ %^C2: %^V1: %^C3: %^C4: %^C5: %^V2: %^C6: %<:%- Cx ;
       where Cx in Cns ;
 
 "C2 reduplication"
-%^C2:Cx <=> %^C1: _ %^V1: %^C3: %^C4: %^C5: %^V2: %^C6: %<:0 Cns: :Cx ;
+%^C2:Cx <=> %^C1: _ %^V1: %^C3: %^C4: %^C5: %^V2: %^C6: %<:%- Cns: :Cx ;
       where Cx in Cns ;
 
 "V1 reduplication"
-%^V1:Vx <=> %^C1: %^C2: _ %^C3: %^C4: %^C5: %^V2: %^C6: %<:0 ( Cns:^1,2 ) Vx ;
+%^V1:Vx <=> %^C1: %^C2: _ %^C3: %^C4: %^C5: %^V2: %^C6: %<:%- ( Cns:^1,2 ) Vx ;
       where Vx in Vow ;
 
 "C3 reduplication"
-%^C3:Cx <=> %^V1: _ %^C4: %^C5: %^V2: %^C6: %<:0 ( Cns:^1,2 ) Vow: :Cx ;
+%^C3:Cx <=> %^V1: _ %^C4: %^C5: %^V2: %^C6: %<:%- ( Cns:^1,2 ) Vow: :Cx ;
       where Cx in Cns ;
 
 "C4 reduplication"
-%^C4:Cx <=> %^V1: %^C3: _ %^C5: %^V2: %^C6: %<:0 ( Cns:^1,2 ) Vow: Cns: :Cx ;
+%^C4:Cx <=> %^V1: %^C3: _ %^C5: %^V2: %^C6: %<:%- ( Cns:^1,2 ) Vow: Cns: :Cx ;
       where Cx in Cns ;
 
 "C5 reduplication"
-%^C5:Cx <=> %^C4: _ %^V2: %^C6: %<:0 ( Cns:^1,2 ) Vow: Cns:^2 CnsPlus:Cx Vow: ( Cns: ) ;
+%^C5:Cx <=> %^C4: _ %^V2: %^C6: %<:%- ( Cns:^1,2 ) Vow: Cns:^2 CnsPlus:Cx Vow: ( Cns: ) ;
       where Cx in Cns ;
 
 "V2 reduplication"
-%^V2:Vx <=> %^V1: %^C3: %^C4: %^C5: _ %^C6: %<:0 ( Cns:^1,2 ) Vow: ( Cns:^1,3 ) Vx ( Cns: ) ;
+%^V2:Vx <=> %^V1: %^C3: %^C4: %^C5: _ %^C6: %<:%- ( Cns:^1,2 ) Vow: ( Cns:^1,3 ) Vx ( Cns: ) ;
       where Vx in Vow ;
 
 "C6 reduplication"
 %^C6:Cx <=> %^V2: _ %<:0 ( Cns:^1,2 ) Vow: ( Cns:^1,3 ) Vow: :Cx [ ?* - [ Vow: Cns: ?* ] ] .#. ;
       where Cx in Cns ;
+
+"Stem boundary to hyphen"
+%<:%- <=> %^V1:Vow ?* _ ;

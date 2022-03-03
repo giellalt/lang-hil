@@ -1,0 +1,36 @@
+### THIS FILE IS GENERATED!!
+### DO NOT EDIT!!
+### IT WILL BE OVERWRITTEN ON NEXT MAKE!!
+###
+LIST 1pl = 1pl ;
+LIST 1sg = 1sg ;
+LIST 2pl = 2pl ;
+LIST 2sg = 2sg ;
+LIST 3pl = 3pl ;
+LIST 3sg = 3sg ;
+LIST Abst = Abst ;
+LIST ActV = ActV ;
+LIST Aug = Aug ;
+LIST CLB = CLB ;
+LIST Cont = Cont ;
+LIST Ctpl = Ctpl ;
+LIST Dim = Dim ;
+LIST Err/Orth = Err/Orth ;
+LIST Excl = Excl ;
+LIST Incl = Incl ;
+LIST Ind = Ind ;
+LIST InsV = InsV ;
+LIST Iter = Iter ;
+LIST LEFT = LEFT ;
+LIST Lig = Lig ;
+LIST Loc = Loc ;
+LIST Nom = Nom ;
+LIST ObjV = ObjV ;
+LIST Obl = Obl ;
+LIST PUNCT = PUNCT ;
+LIST Pers = Pers ;
+LIST Pfv = Pfv ;
+LIST Pl = Pl ;
+LIST RIGHT = RIGHT ;
+LIST RecV = RecV ;
+LIST V = V ;

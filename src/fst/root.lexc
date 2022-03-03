@@ -95,9 +95,9 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
 %^C6 !Sixth consonant reduplication
 %^V1 !First vowel reduplication
 %^V2 !Second vowel reduplication
-+Aug  @U.REDUPLICATION.AUG@ !Augmentative reduplication
-+Dim  @U.REDUPLICATION.DIM@ !Diminutive reduplication
-+Iter @U.REDUPLICATION.REP@ !Repetitive reduplication
++Aug  @R.REDUPLICATION.AUG@ @P.REDUPLICATION.AUG@ !Augmentative reduplication
++Dim  @R.REDUPLICATION.DIM@ @P.REDUPLICATION.DIM@ !Diminutive reduplication
++Iter @R.REDUPLICATION.REP@ @P.REDUPLICATION.REP@ !Repetitive reduplication
 
 !! Adjective Tags
 @U.ADJ.PRE@ !Adjective prefix
