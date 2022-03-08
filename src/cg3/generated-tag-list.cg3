@@ -21,6 +21,7 @@ LIST Err/Orth = Err/Orth ;
 LIST Excl = Excl ;
 LIST Incl = Incl ;
 LIST Ind = Ind ;
+LIST Inf = Inf ;
 LIST InsV = InsV ;
 LIST Iter = Iter ;
 LIST LEFT = LEFT ;

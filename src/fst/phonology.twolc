@@ -6,6 +6,7 @@ Alphabet
  a b c d e f g h i j k l m n ng o p q r s t u v w x y z
  A B C D E F G H I J K L M N Ng O P Q R S T U V W X Y Z
 
+ %-
  %>:0
  %<:0
  %^N:ng
@@ -25,7 +26,7 @@ Vow =  a e i o u
        A E I O U ;
 Cns =  b c d f g h j k l m n ng p q r s t v w x z
        B C D F G H J K L M N Ng P Q R S T V W X Z
-       %^N %^K ;
+       ;
 CnsPlus = Cns %> ; !!TODO Check to see if this is relevant to C5 reduplication, if not, delete it
 
 Rules
@@ -71,7 +72,7 @@ Rules
       where Vx in Vow ;
 
 "C6 reduplication"
-%^C6:Cx <=> %^V2: _ %<:0 ( Cns:^1,2 ) Vow: ( Cns:^1,3 ) Vow: :Cx [ ?* - [ Vow: Cns: ?* ] ] .#. ;
+%^C6:Cx <=> %^V2: _ %<:%- ( Cns:^1,2 ) Vow: ( Cns:^1,3 ) Vow: :Cx [ ?* - [ Vow: Cns: ?* ] ] .#. ;
       where Cx in Cns ;
 
 "Stem boundary to hyphen"

@@ -71,7 +71,7 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
  +Attr +Card
  +Ord
 !! Verb moods are:
- +Ind +Pot +Imprt
+ +Ind +Pot +Imprt +Inf
 !! Verb voices are:
 +ActV @U.VOICE.ACT@ !Actor voice
 +ObjV @U.VOICE.OBJ@ !Object voice

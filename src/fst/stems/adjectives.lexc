@@ -21,30 +21,7 @@ iban Adj_Tag "other" ;
 pareho Adj_Tag "same, similar" ;
 parehas Adj_Tag "same, similar" ;
 
-LEXICON Adv_Root !!TODO Alphabetize
-man Adv_Tag "also" ;
-gid Adv_Tag "very" ;
-pa Adv_Tag "more, yet" ;
-na Adv_Tag "already" ;
-lang Adv_Tag "only" ;
-lamang Adv_Tag "only" ;
-daw Adv_Tag "like" ;
-bisan Adv_Tag "even" ;
-karon Adv_Tag "now, later" ;
-dayon Adv_Tag "immediately" ;
-naman Adv_Tag "again" ;
-subong Adv_Tag "now, current" ;
-samtang Adv_Tag "while" ;
-liwat Adv_Tag "again" ;
-anay Adv_Tag "first" ;
-
 LEXICON Adj_Tag
 +A:0 # ;
-
-LEXICON Adv_Tag
-+Adv:0 # ;
-
-
-
 
 ! vim: set ft=xfst-lexc:
