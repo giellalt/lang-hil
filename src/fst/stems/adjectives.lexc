@@ -16,28 +16,33 @@ diutay Adj "few" ;
 tuod Adj "true" ;
 
 LEXICON Adj_Uninflected
-tanan # "all" ;
-iban # "other" ;
-pareho # "same, similar" ;
-parehas # "same, similar" ;
+tanan Adj_Tag "all" ;
+iban Adj_Tag "other" ;
+pareho Adj_Tag "same, similar" ;
+parehas Adj_Tag "same, similar" ;
 
 LEXICON Adv_Root !!TODO Alphabetize
-man+Adv:man # "also" ;
-gid+Adv:gid # "very" ;
-pa+Adv:pa # "more, yet" ;
-na+Adv:na # "already" ;
-lang+Adv:lang # "only" ;
-lamang+Adv:lamang # "only" ;
-daw+Adv:daw # "like" ;
-bisan+Adv:bisan # "even" ;
-karon+Adv:kaon # "now, later" ;
-dayon+Adv:dayon # "immediately" ;
-naman+Adv:naman # "again" ;
-subong+Adv:subong # "now, current" ;
-samtang+Adv:samtang # "while" ;
-liwat+Adv:liwat # "again, repeat" ;
-anay+Adv:anay # "first" ;
+man Adv_Tag "also" ;
+gid Adv_Tag "very" ;
+pa Adv_Tag "more, yet" ;
+na Adv_Tag "already" ;
+lang Adv_Tag "only" ;
+lamang Adv_Tag "only" ;
+daw Adv_Tag "like" ;
+bisan Adv_Tag "even" ;
+karon Adv_Tag "now, later" ;
+dayon Adv_Tag "immediately" ;
+naman Adv_Tag "again" ;
+subong Adv_Tag "now, current" ;
+samtang Adv_Tag "while" ;
+liwat Adv_Tag "again" ;
+anay Adv_Tag "first" ;
 
+LEXICON Adj_Tag
++A:0 # ;
+
+LEXICON Adv_Tag
++Adv:0 # ;
 
 
 

@@ -2,7 +2,7 @@
 !  --------------------
 !! The Hiligaynon language adjectives compare.
 
-LEXICON Adj_Prefix
+LEXICON Adjectives
 @U.ADJ.PRE@:@U.ADJ.PRE@ma Adj_Root ;
 @U.ADJ.CIR@:@U.ADJ.CIR@ma Adj_Root ;
 Adj_Root ;
