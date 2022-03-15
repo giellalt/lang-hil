@@ -72,32 +72,34 @@ Multichar_Symbols  !!≈ # Definitions for @CODE@
  +Ord
 !! Verb moods are:
  +Ind +Pot +Imprt +Inf
+ +Hab @P.MOOD.HAB@ @R.MOOD.HAB@ !Habitual mood
 !! Verb voices are:
-+ActV @U.VOICE.ACT@ !Actor voice
-+ObjV @U.VOICE.OBJ@ !Object voice
-+InsV @U.VOICE.INS@ !Instrumental voice
-+RecV @U.VOICE.REC@ !Recipient voice
++ActV @P.VOICE.ACT@ @R.VOICE.ACT@ !Actor voice
++ObjV @P.VOICE.OBJ@ @R.VOICE.OBJ@ !Object voice
++InsV @P.VOICE.INS@ @R.VOICE.INS@ !Instrumental voice
++RecV @P.VOICE.REC@ @R.VOICE.REC@ !Recipient voice
 !! Verb Aspects are:
-+Pfv @U.ASPECT.PFV@ !Perfective aspect
-+Cont @U.ASPECT.CON@ !Continuous aspect
-+Ctpl @U.ASPECT.CTP@ !Contemplative aspect
-@U.ASPECT.CTC@ !Contemplative continuous aspect
++Pfv  @P.ASPECT.PFV@ @R.ASPECT.PFV@ !Perfective aspect
++Cont @P.ASPECT.CON@ @R.ASPECT.CON@ !Continuous aspect
++Ctpl @P.ASPECT.CTP@ @R.ASPECT.CTP@ !Contemplative aspect
+      @P.ASPECT.CTC@ @R.ASPECT.CTC@ !Contemplative continuous aspect
 !! Other verb forms are
- +Recipr !!Reciprocal
- +Ger    !!Gerund
+ +Recipr                !!Reciprocal
+ +Ger                   !!Gerund
+ +Cause @P.PREFIX.CAU@ @R.PREFIX.CAU@  !!Causative
 
 !! Reduplication
-%^C1 !First consonant reduplication
-%^C2 !Second consonant reduplication
-%^C3 !Third consonant reduplication
-%^C4 !Fourth consonant reduplication
-%^C5 !Fifth consonant reduplication
-%^C6 !Sixth consonant reduplication
-%^V1 !First vowel reduplication
-%^V2 !Second vowel reduplication
-+Aug  @R.REDUPLICATION.AUG@ @P.REDUPLICATION.AUG@ !Augmentative reduplication
-+Dim  @R.REDUPLICATION.DIM@ @P.REDUPLICATION.DIM@ !Diminutive reduplication
-+Iter @R.REDUPLICATION.REP@ @P.REDUPLICATION.REP@ !Repetitive reduplication
+!!%^C1 !First consonant reduplication
+!!%^C2 !Second consonant reduplication
+!!%^C3 !Third consonant reduplication
+!!%^C4 !Fourth consonant reduplication
+!!%^C5 !Fifth consonant reduplication
+!!%^C6 !Sixth consonant reduplication
+!!%^V1 !First vowel reduplication
+!!%^V2 !Second vowel reduplication
+!!+Aug  @R.REDUPLICATION.AUG@ @P.REDUPLICATION.AUG@ !Augmentative reduplication
+!!+Dim  @R.REDUPLICATION.DIM@ @P.REDUPLICATION.DIM@ !Diminutive reduplication
+!!+Iter @R.REDUPLICATION.REP@ @P.REDUPLICATION.REP@ !Repetitive reduplication
 
 !! Adjective Tags
 @U.ADJ.PRE@ !Adjective prefix

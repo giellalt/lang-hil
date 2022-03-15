@@ -3,56 +3,75 @@
 !! The Hiligaynon language verbs inflect in persons.
 
 LEXICON Verbs
-@U.VOICE.ACT@ Active ;
-@U.VOICE.OBJ@ Object ;
-@U.VOICE.INS@ Instrumental ;
-@U.VOICE.REC@ Recipient ;
+@P.VOICE.ACT@   Active ;
+@P.VOICE.OBJ@   Object ;
+@P.VOICE.INS@   Instrumental ;
+@P.VOICE.REC@   Recipient ;
+                V2 ;
 
 LEXICON Active
-@U.ASPECT.PFV@:@U.ASPECT.PFV@nag Verb_Root ;
-@U.ASPECT.CON@:@U.ASPECT.CON@naga Verb_Root ;
-@U.ASPECT.CTP@:@U.ASPECT.CTP@mag Verb_Root ;
-@U.ASPECT.CTC@:@U.ASPECT.CTC@maga Verb_Root ;
+@P.ASPECT.PFV@:@P.ASPECT.PFV@nag    V2 ;
+@P.ASPECT.CON@:@P.ASPECT.CON@naga   V2 ;
+@P.ASPECT.CTP@:@P.ASPECT.CTP@mag    V2 ;
+@P.ASPECT.CTC@:@P.ASPECT.CTC@maga   V2 ;
 
 LEXICON Object
-@U.ASPECT.PFV@:@U.ASPECT.PFV@gin Verb_Root ;
-@U.ASPECT.CON@:@U.ASPECT.CON@gina Verb_Root ;
-@U.ASPECT.CTP@:@U.ASPECT.CTP@ Verb_Root ;
-@U.ASPECT.CTC@:@U.ASPECT.CTC@paga Verb_Root ;
+@P.ASPECT.PFV@:@P.ASPECT.PFV@gin    V2 ;
+@P.ASPECT.CON@:@P.ASPECT.CON@gina   V2 ;
+@P.ASPECT.CTP@:@P.ASPECT.CTP@       V2 ;
+@P.ASPECT.CTC@:@P.ASPECT.CTC@paga   V2 ;
 
 LEXICON Instrumental
-@U.ASPECT.PFV@:@U.ASPECT.PFV@gin Verb_Root ;
-@U.ASPECT.CON@:@U.ASPECT.CON@gina Verb_Root ;
-@U.ASPECT.CTP@:@U.ASPECT.CTP@i Verb_Root ;
-@U.ASPECT.CTC@:@U.ASPECT.CTC@iga Verb_Root ;
+@P.ASPECT.PFV@:@P.ASPECT.PFV@gin    V2 ;
+@P.ASPECT.CON@:@P.ASPECT.CON@gina   V2 ;
+@P.ASPECT.CTP@:@P.ASPECT.CTP@i      V2 ;
+@P.ASPECT.CTC@:@P.ASPECT.CTC@iga    V2 ;
 
 LEXICON Recipient
-@U.ASPECT.PFV@:@U.ASPECT.PFV@gin Verb_Root ;
-@U.ASPECT.CON@:@U.ASPECT.CON@gina Verb_Root ;
-@U.ASPECT.CTP@:@U.ASPECT.CTP@ Verb_Root ;
-@U.ASPECT.CTC@:@U.ASPECT.CTC@paga Verb_Root ;
+@P.ASPECT.PFV@:@P.ASPECT.PFV@gin    V2 ;
+@P.ASPECT.CON@:@P.ASPECT.CON@gina   V2 ;
+@P.ASPECT.CTP@:@P.ASPECT.CTP@       V2 ;
+@P.ASPECT.CTC@:@P.ASPECT.CTC@paga   V2 ;
+
+LEXICON V2
+@P.MOOD.HAB@:@P.MOOD.HAB@pa%^N  V3 ;
+                                V3 ;
+
+LEXICON V3
+@P.PREFIX.CAU@:@P.PREFIX.CAU@pa Verb_Root ;
+                                Verb_Root ;
 
 LEXICON Voice
-@U.VOICE.ACT@+V+Ind+ActV:@U.VOICE.ACT@%> Aspect ;
-@U.VOICE.INS@+V+Ind+InsV:@U.VOICE.INS@%> Aspect ;
-@U.VOICE.REC@+V+Ind+RecV:@U.VOICE.REC@%>an Aspect ;
-@U.VOICE.OBJ@@U.ASPECT.PFV@+V+Ind+ObjV+Pfv:@U.VOICE.OBJ@@U.ASPECT.PFV@%> # ;
-@U.VOICE.OBJ@@U.ASPECT.CON@+V+Ind+ObjV+Cont:@U.VOICE.OBJ@@U.ASPECT.CON@%> # ;
-@U.VOICE.OBJ@@U.ASPECT.CTP@+V+Ind+ObjV+Ctpl:@U.VOICE.OBJ@@U.ASPECT.CTP@%>on # ;
-@U.VOICE.OBJ@@U.ASPECT.CTC@+V+Ind+ObjV+Ctpl+Cont:@U.VOICE.OBJ@@U.ASPECT.CTC@%>on # ;
-+V+Inf: # ;
+@R.VOICE.ACT@+V+Ind+ActV:@R.VOICE.ACT@%>                                            Aspect ;
+@R.VOICE.INS@+V+Ind+InsV:@R.VOICE.INS@%>                                            Aspect ;
+@R.VOICE.REC@+V+Ind+RecV:@R.VOICE.REC@%>an                                          Aspect ;
+@R.VOICE.OBJ@@R.ASPECT.PFV@+V+Ind+ObjV+Pfv:@R.VOICE.OBJ@@R.ASPECT.PFV@%>            # ;
+@R.VOICE.OBJ@@R.ASPECT.CON@+V+Ind+ObjV+Cont:@R.VOICE.OBJ@@R.ASPECT.CON@%>           # ;
+@R.VOICE.OBJ@@R.ASPECT.CTP@+V+Ind+ObjV+Ctpl:@R.VOICE.OBJ@@R.ASPECT.CTP@%>on         # ;
+@R.VOICE.OBJ@@R.ASPECT.CTC@+V+Ind+ObjV+Ctpl+Cont:@R.VOICE.OBJ@@R.ASPECT.CTC@%>on    # ;
++V+Inf:                                                                             # ;
+                                                                                    Aspect ;
 
 LEXICON Aspect
-@U.ASPECT.PFV@+Pfv:@U.ASPECT.PFV@       Reduplication ;
-@U.ASPECT.CON@+Cont:@U.ASPECT.CON@      Reduplication ;
-@U.ASPECT.CTP@+Ctpl:@U.ASPECT.CTP@      Reduplication ;
-@U.ASPECT.CTC@+Ctpl+Cont:@U.ASPECT.CTC@ Reduplication ;
+@R.ASPECT.PFV@+Pfv:@R.ASPECT.PFV@       V2_Tags ;
+@R.ASPECT.CON@+Cont:@R.ASPECT.CON@      V2_Tags ;
+@R.ASPECT.CTP@+Ctpl:@R.ASPECT.CTP@      V2_Tags ;
+@R.ASPECT.CTC@+Ctpl+Cont:@R.ASPECT.CTC@ V2_Tags ;
+                                        V2_Tags ;
+
+LEXICON V2_Tags
+@R.MOOD.HAB@+Hab:@R.MOOD.HAB@   V3_Tags ;
+                                V3_Tags ;
+
+LEXICON V3_Tags
+@R.PREFIX.CAU@+Caus:@R.PREFIX.CAU@  Reduplication ;
+                                    Reduplication ;
 
 LEXICON Reduplication
-@R.REDUPLICATION.AUG@+Aug:@R.REDUPLICATION.AUG@ # ;
-@R.REDUPLICATION.DIM@+Dim:@R.REDUPLICATION.DIM@ # ;
-@R.REDUPLICATION.REP@+Iter:@R.REDUPLICATION.REP@ # ;
-# ;
+!!@R.REDUPLICATION.AUG@+Aug:@R.REDUPLICATION.AUG@     # ;
+!!@R.REDUPLICATION.DIM@+Dim:@R.REDUPLICATION.DIM@     # ;
+!!@R.REDUPLICATION.REP@+Iter:@R.REDUPLICATION.REP@    # ;
+                                                    # ;
 
 
 
