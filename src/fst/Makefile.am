@@ -80,6 +80,33 @@ GIELLA_LOCAL_TARGETS=
 
 ### END: Local processing: ###
 
+LEXD_FILES=\
+			 affixes/adjectives.lexd  \
+			 affixes/nouns.lexd       \
+			 affixes/verbs.lexd       \
+			 stems/articles.lexd      \
+			 stems/adjectives.lexd    \
+			 stems/adverbs.lexd       \
+			 stems/articles.lexd	  \
+			 stems/nouns.lexd         \
+			 stems/numerals.lexd      \
+			 stems/prepositions.lexd  \
+			 stems/pronouns.lexd      \
+			 stems/verbs.lexd
+
+lexicon.tmp.lexd: root.lexd $(LEXD_FILES)
+	cat $^ > $@
+
+lexicon.tmp.att: lexicon.tmp.lexd
+	lexd -f $< $@
+
+lexicon.tmp.hfst: lexicon.tmp.att
+	cat $< | sed -E 's/\t<([^\t]+)>\t/\t+\1\t/g' \
+		   | sed -E 's/\t\{([^\t]+)\}\t/\t^\1\t/g' \
+		   | hfst-txt2fst $(HFST_FORMAT) -o $@
+# first sed is <X> → +X
+# second is    {X} → ^X
+
 ####### Other targets: ###########
 # Clean: add local clean targets on separate lines, so that the first line can
 # easily get updates from the template dir through svn merge.

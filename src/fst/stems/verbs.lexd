@@ -1,0 +1,40 @@
+## Verbs
+#  -----
+## Verbs in the Hiligaynon language are actions.
+
+PATTERN Verb_Root
+VRoot
+VRoot VRoot [:[aug,dim,rep]]
+
+LEXICON VRoot
+bakal # "buy"
+baligya # "sell"
+balik # "return"
+basa # "read"
+baton # "receive"
+bulig # "help"
+dala # "bring"
+gamit # "use"
+hambal # "speak"
+hatag # "give"
+inom # "drink"
+kadto # "go"
+kanta # "sing"
+kaon # "eat"
+kita # "see"
+kuha # "take"
+lakat # "walk"
+lantaw # "watch"
+luto # "cook"
+nguy-ab # "yawn"
+palapit # "approach"
+pamangkot # "ask"
+sabat # "answer"
+siling # "say"
+sulat # "write"
+sunod # "follow"
+tawag # "call"
+tudlo # "teach"
+tulog # "sleep"
+tulok # "look"
+tuon # "study"

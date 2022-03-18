@@ -1,0 +1,25 @@
+## Adjectives
+#  ----------
+## Adjectives in the Hiligaynon language describe things.
+
+LEXICON Adj_Root
+ayo # "good"
+lipay # "happy"
+subo # "sad"
+akig # "angry"
+dasig # "fast"
+hinay # "slow"
+dako # "big"
+gamay # "small"
+damo # "many"
+diutay # "few"
+tuod # "true"
+
+LEXICON Adj_Uninflected
+tanan # "all"
+iban # "other"
+pareho # "same, similar"
+parehas # "same, similar"
+
+LEXICON Adj_Tag
++A:0 #

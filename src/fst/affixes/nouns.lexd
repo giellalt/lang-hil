@@ -1,0 +1,8 @@
+## Noun inflection
+#  ---------------
+## The Hiligaynon language nouns inflect in cases.
+
+PATTERN Nouns
+Noun_Root [<N>:]
+
+#LEXICON Cases

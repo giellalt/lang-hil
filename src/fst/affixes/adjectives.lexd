@@ -1,0 +1,15 @@
+## Adjective inflection
+#  --------------------
+## The Hiligaynon language adjectives compare.
+
+PATTERN Adjectives
+:AdjPrefix Adj_Root AdjPrefix:
+Adj_Root AdjSuffix
+Adj_Uninflected [<A>:]
+Adv_Root [<Adv>:]
+
+LEXICON AdjPrefix
+<A>:ma
+
+LEXICON AdjSuffix
+<A>:>on
