@@ -21,12 +21,15 @@ tasks:
       then: ${event.pull_request.base.repo.full_name}
       else: ${event.repository.full_name}
     branch:
-        $if: "event.ref[:11] == 'refs/heads/'"
-        then: "branch:${event.ref[11:]}"
+        $if: tasks_for == "github-pull-request"
+        then: "pull-request"
         else:
-          $if: "event.ref[:10] == 'refs/tags/'"
-          then: "tag:${event.ref[10:]}"
-          else: "pull-request"
+          $if: "event.ref[:11] == 'refs/heads/'"
+          then: "branch:${event.ref[11:]}"
+          else:
+            $if: "event.ref[:10] == 'refs/tags/'"
+            then: "tag:${event.ref[10:]}"
+            else: "pull-request"
     should_run:
       $match:
         (tasks_for == "github-push") || (tasks_for == "github-pull-request" && event["action"] in ["opened","reopened","synchronize"]):
