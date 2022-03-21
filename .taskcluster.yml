@@ -41,7 +41,7 @@ tasks:
     clone_url:
       $if: tasks_for == "github-pull-request"
       then: ${event.base.repo.clone_url}
-      else: ${event.clone_url}
+      else: ${event.repository.clone_url}
     after:
       $if: tasks_for == "github-pull-request"
       then: ${event.base.sha}
