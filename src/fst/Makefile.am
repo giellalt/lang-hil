@@ -20,22 +20,24 @@ HFST_LEXC_LOCAL_FLAGS=
 
 ####### Morphology source file defs: ########
 
-# Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
-GT_LEXC_ROOT=$(srcdir)/root.lexc
+LEXD_FILES=\
+			 affixes/verbs.lexd 	 \
+			 affixes/nouns.lexd 	 \
+			 stems/content.lexd 	 \
+			 stems/uninflected.lexd
 
-# Set this to the names of all regular lexc source files:
-GT_LEXC_SRCS_L1_L2=\
-			 affixes/adjectives.lexc  \
-			 affixes/nouns.lexc       \
-			 affixes/verbs.lexc       \
-			 stems/adjectives.lexc    \
-			 stems/adverbs.lexc       \
-			 stems/articles.lexc	  \
-			 stems/nouns.lexc         \
-			 stems/numerals.lexc      \
-			 stems/prepositions.lexc  \
-			 stems/pronouns.lexc      \
-			 stems/verbs.lexc
+lexicon.tmp.lexd: root.lexd $(LEXD_FILES)
+	cat $^ > $@
+
+lexicon.tmp.att: lexicon.tmp.lexd
+	lexd -f $< $@
+
+lexicon.tmp.hfst: lexicon.tmp.att
+	cat $< | sed -E 's/\t<([^\t]+)>\t/\t+\1\t/g' \
+		   | hfst-txt2fst $(HFST_FORMAT) -o $@
+# first sed is <X> → +X
+
+
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and

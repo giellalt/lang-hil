@@ -9,16 +9,9 @@ Alphabet
  %-
  %>:0
  %<:0
- %^N:ng
- %^K:0
- %^C1:0
- %^C2:0
- %^C3:0
- %^C4:0
- %^C5:0
- %^C6:0
- %^V1:0
- %^V2:0 ;
+ %{N%}:ng
+ %{K%}:0
+ ;
 
 Sets
 
@@ -27,53 +20,20 @@ Vow =  a e i o u
 Cns =  b c d f g h j k l m n ng p q r s t v w x z
        B C D F G H J K L M N Ng P Q R S T V W X Z
        ;
-CnsPlus = Cns %> ; !!TODO Check to see if this is relevant to C5 reduplication, if not, delete it
 
 Rules
 
-">:h Adding h to suffix after vowel final stems"
-%>:h <=> Vow _ ;
+!!">:h Adding h to suffix after vowel final stems"
+!!%>:h <=> Vow _ ;
 
-"^N:n Nasal assimilation"
-%^N:n <=> _ ( %<: ) [ t | d | s ] ;
+"{N}:n Nasal assimilation"
+%{N%}:n <=> _ ( %<: ) [ t | d | s ] ;
 
-"^N:m Nasal assimilation"
-%^N:m <=> _ ( %<: ) [ p | b ] ;
-
-!TODO work on trisyllabic roots (C6 rule?)
-!Max Syllable structure: (C1) (C2) V1 (C3) . (C4) (C5) V2 (C6)
-
-!!"C1 reduplication"
-!!%^C1:Cx <=> _    %^C2:  %^V1: %^C3: %^C4: %^C5: %^V2: %^C6: %<:%- :Cx ;
-!!      where Cx in Cns ;
-!!
-!!"C2 reduplication"
-!!%^C2:Cx <=> %^C1: _     %^V1: %^C3: %^C4: %^C5: %^V2: %^C6: %<:%- :Cns :Cx ;
-!!      where Cx in Cns ;
-!!
-!!"V1 reduplication"
-!!%^V1:Vx <=> %^C1: %^C2:  _    %^C3: %^C4: %^C5: %^V2: %^C6: %<:%- ( :Cns^1,2 ) Vx ;
-!!      where Vx in Vow ;
-!!
-!!"C3 reduplication"
-!!%^C3:Cx <=>             %^V1:  _    %^C4: %^C5: %^V2: %^C6: %<:%- ( :Cns^1,2 ) Vow: :Cx ;
-!!      where Cx in Cns ;
-!!
-!!"C4 reduplication"
-!!%^C4:Cx <=>             %^V1: %^C3: _     %^C5: %^V2: %^C6: %<:%- ( :Cns^1,2 ) Vow: :Cns :Cx ;
-!!      where Cx in Cns ;
-!!
-!!"C5 reduplication"
-!!%^C5:Cx <=>                         %^C4:  _    %^V2: %^C6: %<:%- ( :Cns^1,2 ) Vow: :Cns^2  CnsPlus:Cx Vow: ( :Cns ) ;
-!!      where Cx in Cns ;
-!!
-!!"V2 reduplication"
-!!%^V2:Vx <=>             %^V1: %^C3: %^C4: %^C5:  _    %^C6: %<:%- ( :Cns^1,2 ) Vow: ( :Cns^1,3 )       Vx   ( :Cns ) ;
-!!      where Vx in Vow ;
-!!
-!!"C6 reduplication"
-!!%^C6:Cx <=>                                     %^V2: _     %<:%- ( :Cns^1,2 ) Vow: ( :Cns^1,3 )       Vow:  :Cx [ ?* - [ Vow: :Cns ?* ] ] .#. ;
-!!      where Cx in Cns ;
+"{N}:m Nasal assimilation"
+%{N%}:m <=> _ ( %<: ) [ p | b ] ;
 
 !!"Stem boundary to hyphen"
 !!%<:%- <=> %^V1:Vow ?* _ ;
+
+!!TODO:       Add stem boundaries to lexd
+!!TODO:       Figure out initial consonant deletion with nasal assimilation
