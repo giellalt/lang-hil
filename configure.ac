@@ -189,7 +189,7 @@ gt_CONFIG_FILES
 ##### BEGIN: Add language-specific list of files to ######
 ########## be processed by autoconf below here: ##########
 
-PKG_CHECK_MODULES(LEXD, lexd >= 1.1.0)
+# PKG_CHECK_MODULES(LEXD, lexd >= 1.1.0)
 AC_PATH_PROG([LEXD], [lexd], [false])
 
 ############ END: Language-specific scripts. #############
