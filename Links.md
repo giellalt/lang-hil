@@ -2,18 +2,7 @@
     * `cg3/`
         * [functions.cg3](src-cg3-functions.cg3.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/cg3/functions.cg3))
     * `fst/`
-        * `affixes/`
-            * [adjectives.lexc](src-fst-affixes-adjectives.lexc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/affixes/adjectives.lexc))
-            * [nouns.lexc](src-fst-affixes-nouns.lexc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/affixes/nouns.lexc))
-            * [verbs.lexc](src-fst-affixes-verbs.lexc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/affixes/verbs.lexc))
         * [phonology.twolc](src-fst-phonology.twolc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/phonology.twolc))
-        * [root.lexc](src-fst-root.lexc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/root.lexc))
-        * `stems/`
-            * [adjectives.lexc](src-fst-stems-adjectives.lexc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/stems/adjectives.lexc))
-            * [nouns.lexc](src-fst-stems-nouns.lexc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/stems/nouns.lexc))
-            * [numerals.lexc](src-fst-stems-numerals.lexc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/stems/numerals.lexc))
-            * [pronouns.lexc](src-fst-stems-pronouns.lexc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/stems/pronouns.lexc))
-            * [verbs.lexc](src-fst-stems-verbs.lexc.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/fst/stems/verbs.lexc))
     * `phonetics/`
         * [txt2ipa.xfscript](src-phonetics-txt2ipa.xfscript.html) ([src](https://github.com/giellalt/lang-hil/blob/main/src/phonetics/txt2ipa.xfscript))
     * `transcriptions/`
