@@ -23,8 +23,8 @@ Cns =  b c d f g h j k l m n ng p q r s t v w x z
 
 Rules
 
-!!">:h Adding h to suffix after vowel final stems"
-!!%>:h <=> Vow _ ;
+">:h Adding h to suffix after vowel final stems"
+%>:h <=> Vow _ Vow ;
 
 "{N}:n Nasal assimilation"
 %{N%}:n <=> _ ( %<: ) [ t | d | s ] ;
@@ -32,8 +32,8 @@ Rules
 "{N}:m Nasal assimilation"
 %{N%}:m <=> _ ( %<: ) [ p | b ] ;
 
-!!"Stem boundary to hyphen"
-!!%<:%- <=> %^V1:Vow ?* _ ;
+"Stem boundary to hyphen"
+%<:%- <=> %^V1:Vow ?* _ ;
 
 !!TODO:       Add stem boundaries to lexd
 !!TODO:       Figure out initial consonant deletion with nasal assimilation

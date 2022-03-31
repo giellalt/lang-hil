@@ -44,15 +44,22 @@ with ZipFile('DictionaryForMIDs/DictionaryForMIDs_HilEng_KVED.jar') as zf:
 # The list in `lines` is a list of strings
 
 cc = 'ANV'  # TODO name the continuation class (this idea stands from AdjectiveNounVerb)
-with open('dfm.lexc', 'w') as f:
+with open('content.lexd', 'w') as f:
     print('LEXICON Content', file=f)
     for line in lines:
         line = line.decode('utf8')
         stem, gloss = line.split('\t')
         new_stem = stem.split(',')[0]
+        if new_stem.startswith('-'):
+            continue
+        try:
+            s1, s2, s3 = re.match(r'([-bcdfghjklmnpqrstvwxyz]*)([aeiouáàâéèêíìîóòôúùû])([-áàâéèêíìîóòôúùûa-z]*)$', new_stem, flags=re.I).groups()
+        except AttributeError:
+            print(new_stem)
+            continue
         for find, replace in trans_table:
             if re.search(find, new_stem):
-                print(find, replace, stem)
+                #print(find, replace, stem)
                 new_stem = re.sub(find, replace, new_stem)
                 assert not re.search(find, new_stem)
         gloss = re.sub(r'\[01([^\]]+)\]', r'\1', gloss)
@@ -60,4 +67,4 @@ with open('dfm.lexc', 'w') as f:
         if '[01' in gloss:
             print('DEBUG', repr(line), gloss, gloss)
         gloss = gloss.replace('"', '%"')
-        print(f'{new_stem} {cc} "{gloss}" ; !!!{{{stem}}}', file=f)
+        print(f'{s1} {s2} {s3}   # {gloss} !{{{stem}}}', file=f)
