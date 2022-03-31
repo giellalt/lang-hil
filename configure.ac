@@ -118,8 +118,6 @@ AM_CONDITIONAL([HAVE_DIALECTS], [test "x$DIALECTS" != "x"])
 
 ########## LANGUAGE SPECIFIC BUILD SETTINGS ##########
 
-PKG_CHECK_MODULES(LEXD, lexd >= 1.1.0)
-
 # NO_PHONOLOGY = yes
 # ... makes the bulid process skip compilation of anything in the fst/
 # dir. This is mainly useful when building from external sources such that the
@@ -190,6 +188,12 @@ gt_CONFIG_FILES
 ##########################################################
 ##### BEGIN: Add language-specific list of files to ######
 ########## be processed by autoconf below here: ##########
+
+# PKG_CHECK_MODULES(LEXD, lexd >= 1.1.0)
+AC_PATH_PROG([LEXD], [lexd], [no])
+AS_IF([test "x${LEXD}" == xno],
+        [AC_MSG_ERROR([LexD is missing, please install!])
+    ])
 
 ############ END: Language-specific scripts. #############
 

@@ -27,14 +27,14 @@ LEXD_FILES=\
 			 stems/uninflected.lexd
 
 lexicon.tmp.lexd: root.lexd $(LEXD_FILES)
-	cat $^ > $@
+	$(AM_V_GEN)cat $^ > $@
 
 lexicon.tmp.att: lexicon.tmp.lexd
-	lexd -f $< $@
+	$(AM_V_LEXD)$(LEXD) -f $< $@
 
 lexicon.tmp.hfst: lexicon.tmp.att
-	cat $< | sed -E 's/\t<([^\t]+)>\t/\t+\1\t/g' \
-		   | hfst-txt2fst $(HFST_FORMAT) -o $@
+	$(AM_V_GEN)cat $< | sed -E 's/\t<([^\t]+)>\t/\t+\1\t/g' \
+		   | $(HFST_TXT2FST) $(HFST_FORMAT) -o $@
 # first sed is <X> → +X
 
 
