@@ -33,8 +33,10 @@ lexicon.tmp.att: lexicon.tmp.lexd
 	$(AM_V_LEXD)$(LEXD) -f $< $@
 
 lexicon.tmp.hfst: lexicon.tmp.att
-	$(AM_V_GEN)cat $< | sed -E 's/\t<([^\t]+)>\t/\t+\1\t/g' \
-		   | $(HFST_TXT2FST) $(HFST_FORMAT) -o $@
+	$(AM_V_GEN)cat $<  \
+		| sed -E 's/\t<(@[A-Z]\.LEX\.[A-Za-z0-9]+@)>\t/\t\1\t/g' \
+		| sed -E 's/\t<([^\t]+)>\t/\t+\1\t/g' \
+		| $(HFST_TXT2FST) $(HFST_FORMAT) -o $@
 # first sed is <X> → +X
 
 

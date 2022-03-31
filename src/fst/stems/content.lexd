@@ -1,5 +1,5 @@
-LEXICON Stem(3)
-#h a tag>
-#t u dlo{K}>
-: a bot>
-#b a sa>
+LEXICON Stem(5)
+h a tag <@P.LEX.hatag@> <@R.LEX.hatag@>
+t u dlo{K} <@P.LEX.tudlo@> <@R.LEX.tudlo@>/
+: a bot <@P.LEX.abot@> <@R.LEX.abot@>
+b a sa <@P.LEX.basa@> <@R.LEX.basa@>

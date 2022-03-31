@@ -32,8 +32,8 @@ Rules
 "{N}:m Nasal assimilation"
 %{N%}:m <=> _ ( %<: ) [ p | b ] ;
 
-"Stem boundary to hyphen"
-%<:%- <=> %^V1:Vow ?* _ ;
+!"Stem boundary to hyphen"
+!%<:%- <=> :Vow ?* _ ;
 
 !!TODO:       Add stem boundaries to lexd
 !!TODO:       Figure out initial consonant deletion with nasal assimilation
