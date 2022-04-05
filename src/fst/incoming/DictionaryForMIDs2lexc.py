@@ -46,7 +46,7 @@ with ZipFile('DictionaryForMIDs/DictionaryForMIDs_HilEng_KVED.jar') as zf:
 
 cc = 'ANV'  # TODO name the continuation class (this idea stands from AdjectiveNounVerb)
 with open('content.lexd', 'w') as f:
-    print('LEXICON Stem(5)', file=f)
+    print('LEXICON Stem(3)', file=f)
     flag_dict = defaultdict(list)
     for line in lines:
         line = line.decode('utf8')
@@ -59,8 +59,6 @@ with open('content.lexd', 'w') as f:
                 #print(find, replace, stem)
                 new_stem = re.sub(find, replace, new_stem)
                 assert not re.search(find, new_stem)
-        flag_stem = new_stem + str(len(flag_dict[new_stem]))
-        flag_dict[new_stem].append(flag_stem)
         try:
             s1, s2, s3 = re.match(r'([-bcdfghjklmnpqrstvwxyz%^]*)([aeiou\u0301])([-\u0301a-z%^]*)$', new_stem, flags=re.I).groups()
             if not s1:
@@ -77,4 +75,4 @@ with open('content.lexd', 'w') as f:
         if '[01' in gloss:
             print('DEBUG', repr(line), gloss, gloss)
         gloss = gloss.replace('"', '%"')
-        print(f'{s1} {s2} {s3} <@P.LEX.{flag_stem}@> <@R.LEX.{flag_stem}@>  # {gloss} !{{{stem}}}', file=f)
+        print(f'{s1} {s2} {s3}  # {gloss} !{{{stem}}}', file=f)

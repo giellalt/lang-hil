@@ -1,47 +1,56 @@
 PATTERN Verbs
 Stem(1): :Stem(1) Stem(2) Stem(3)                                                                  #Unaffixed root
-Infx
-Redup
+#Infx
+#Redup
 Sufx
-DimRedup
+#DimRedup
 Pre1
 VoiAsp
 Habitual
 
-PATTERN Infx
-Stem(1): :Stem(1) :Infixes(1) :Infixes(2) Stem(2) Stem(3) Stem(5) Infixes(1):                                                                                        #Simple infixation
-Stem(1): :Stem(1) :Infixes(1) :Infixes(2) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Stem(5) Infixes(1): Reduplication:                                              #Simple infixation with reduplication
-Stem(1): :Stem(1) Stem(2) :Redup_Infixes_1(1) :Stem(2) Stem(3) Stem(5) :Redup_Infixes_1(2) Redup_Infixes_1(1):                                                       #Instrumental infixation
-Stem(1): :Stem(1) Stem(2) :Redup_Infixes_1(1) :Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Stem(5) :Redup_Infixes_1(2) Redup_Infixes_1(1): Reduplication:             #Instrumental infixation with reduplication
-Stem(1): :Stem(1) Stem(2) :Redup_Infixes_2(1) :Stem(2) :Redup_Infixes_2(2) :Stem(2) Stem(3) Stem(5) Redup_Infixes_2(1):                                              #Plural infixation
-Stem(1): :Stem(1) Stem(2) :Redup_Infixes_2(1) :Stem(2) :Redup_Infixes_2(2) :Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Stem(5) Redup_Infixes_2(1): Reduplication:    #Plural infixation with reduplication
+#PATTERN Infx
+#Stem(1): :Stem(1) :Infixes(1) :Infixes(2) Stem(2) Stem(3) Infixes(1):                                                                                        #Simple infixation
+#Stem(1): :Stem(1) :Infixes(1) :Infixes(2) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Infixes(1): Reduplication:                                              #Simple infixation with reduplication
+#Stem(1): :Stem(1) Stem(2) :Redup_Infixes_1(1) :Stem(2) Stem(3) :Redup_Infixes_1(2) Redup_Infixes_1(1):                                                       #Instrumental infixation
+#Stem(1): :Stem(1) Stem(2) :Redup_Infixes_1(1) :Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) :Redup_Infixes_1(2) Redup_Infixes_1(1): Reduplication:             #Instrumental infixation with reduplication
+#Stem(1): :Stem(1) Stem(2) :Redup_Infixes_2(1) :Stem(2) :Redup_Infixes_2(2) :Stem(2) Stem(3) Redup_Infixes_2(1):                                              #Plural infixation
+#Stem(1): :Stem(1) Stem(2) :Redup_Infixes_2(1) :Stem(2) :Redup_Infixes_2(2) :Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Redup_Infixes_2(1): Reduplication:    #Plural infixation with reduplication
 
-PATTERN Redup
-Stem(1): :Stem(1) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Stem(5) Reduplication:       #Full reduplication
+#PATTERN Redup
+#Stem(1): :Stem(1) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Reduplication:       #Full reduplication
 
 PATTERN Sufx
 Stem(1): :Stem(1) Stem(2) Stem(3) Suffixes
-Infx Suffixes?                                                          #Optional suffixes to the infixed & reduplicated stems
+#Infx Suffixes?                                                          #Optional suffixes to the infixed & reduplicated stems
 
-PATTERN DimRedup
-:Stem(1) Stem(4) :Diminutive Stem(1): :Stem(1) Stem(2) Stem(3) Suffixes? Diminutive:          #Culu- with optional suffixes
-:Stem(1) Stem(4) :Diminutive Infx Suffixes? Diminutive:                             #Culu- with infixed forms (including infixed reduplication)
-:Stem(1) Stem(4) :Diminutive Redup Suffixes? Diminutive:                            #Culu- with full reduplication only (excluding infixes)
+#PATTERN DimRedup
+#:Stem(1) :Diminutive Stem(1): :Stem(1) Stem(2) Stem(3) Suffixes? Diminutive:          #Culu- with optional suffixes
+
+### The next 6 lines are the Dim reduplication with the 6 lines from Infx
+#:Stem(1) :Diminutive Stem(1): :Stem(1) :Infixes(1) :Infixes(2) Stem(2) Stem(3) Infixes(1): Suffixes? Diminutive:
+#:Stem(1) :Diminutive Stem(1): :Stem(1) :Infixes(1) :Infixes(2) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Infixes(1): Reduplication: Suffixes? Diminutive:
+#:Stem(1) :Diminutive Stem(1): :Stem(1) Stem(2) :Redup_Infixes_1(1) :Stem(2) Stem(3) :Redup_Infixes_1(2) Redup_Infixes_1(1): Suffixes? Diminutive:
+#:Stem(1) :Diminutive Stem(1): :Stem(1) Stem(2) :Redup_Infixes_1(1) :Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) :Redup_Infixes_1(2) Redup_Infixes_1(1): Reduplication: Suffixes? Diminutive:
+#:Stem(1) :Diminutive Stem(1): :Stem(1) Stem(2) :Redup_Infixes_2(1) :Stem(2) :Redup_Infixes_2(2) :Stem(2) Stem(3) Redup_Infixes_2(1): Suffixes? Diminutive:
+#:Stem(1) :Diminutive Stem(1): :Stem(1) Stem(2) :Redup_Infixes_2(1) :Stem(2) :Redup_Infixes_2(2) :Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Redup_Infixes_2(1): Reduplication: Suffixes? Diminutive:
+
+### The next line is Dim Redup with the Redup pattern (full stem reduplication)
+#:Stem(1) :Diminutive Stem(1): :Stem(1) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Reduplication: Suffixes? Diminutive:                            #Culu- with full reduplication only (excluding infixes)
 
 PATTERN Pre1
 :Prefix1 Stem(1): :Stem(1) Stem(2) Stem(3) Prefix1: Suffixes?
-:Prefix1 DimRedup Prefix1:
-:Prefix1 Infx Prefix1:
-:Prefix1 Redup Prefix1:
+#:Prefix1 DimRedup Prefix1:
+#:Prefix1 Infx Prefix1:
+#:Prefix1 Redup Prefix1:
 :Prefix1 Agentive1 Prefix1:
 :Prefix1 Agentive2 Prefix1:
 :Prefix1 SeasonN Prefix1:
 
 PATTERN VoiAsp
 :VoiceAspect(1) Stem(1): :Stem(1) Stem(2) Stem(3) :VoiceAspect(2) VoiceAspect(1):
-:VoiceAspect(1) DimRedup :VoiceAspect(2) VoiceAspect(1):
-:VoiceAspect(1) Infx :VoiceAspect(2) VoiceAspect(1):
-:VoiceAspect(1) Redup :VoiceAspect(2) VoiceAspect(1):
+#:VoiceAspect(1) DimRedup :VoiceAspect(2) VoiceAspect(1):
+#:VoiceAspect(1) Infx :VoiceAspect(2) VoiceAspect(1):
+#:VoiceAspect(1) Redup :VoiceAspect(2) VoiceAspect(1):
 :VoiceAspect(1) Agentive1 :VoiceAspect(2) VoiceAspect(1):
 :VoiceAspect(1) Agentive2 :VoiceAspect(2) VoiceAspect(1):
 :VoiceAspect(1) SeasonN :VoiceAspect(2) VoiceAspect(1):
@@ -62,10 +71,10 @@ LEXICON Prefix1
 LEXICON Diminutive
 <Dim>:ulu                                                               #Diminutive reduplicative prefix Culu-
 
-LEXICON Infixes(2)
-<Ints>:i            :n
-<Ptcp>:i            :n
-<Ind><ActV><Real>:u :m
+#LEXICON Infixes(2)
+#<Ints>:i            :n
+#<Ptcp>:i            :n
+#<Ind><ActV><Real>:u :m
 
 LEXICON Redup_Infixes_1(2)
 <ActV><Ins><Nmlz>:l     :
