@@ -5,9 +5,9 @@ Agentive2
 
 PATTERN SeasonN
 :SeasonNmlz(1) Stem(1) :Stem(2) :SeasonNmlz(2) Stem(2) Stem(3) SeasonNmlz: Suffixes?                                                                                    #Seasonal tig- -VL- nominals and optional suffixes
-#:SeasonNmlz(1) Stem(1) :Infixes(1) :SeasonNmlz(2) :Infixes(1) :Infixes(2) Stem(2) Stem(3) SeasonNmlz: Infixes(1): Suffixes?                                                #Seasonal tig- -VL- with other infixes (-in-/-um-) and optional suffixes
+#:SeasonNmlz(1) Stem(1) :Infixes_L(1) :SeasonNmlz(2) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) SeasonNmlz: Infixes_L(1): Suffixes?                                                #Seasonal tig- -VL- with other infixes (-in-/-um-) and optional suffixes
 :SeasonNmlz(1) Stem(1) :Stem(2) :SeasonNmlz(2) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) SeasonNmlz: Reduplication: Suffixes?                                          #Seasonal tig- -VL- with reduplication and optional suffixes
-#:SeasonNmlz(1) Stem(1) :Infixes(1) :SeasonNmlz(2) :Infixes(1) :Infixes(2) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) SeasonNmlz: Infixes(1): Reduplication: Suffixes?      #Seasonal tig- -VL- with other infixes (-in-/-um-), reduplication, and optional suffixes
+#:SeasonNmlz(1) Stem(1) :Infixes_L(1) :SeasonNmlz(2) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) SeasonNmlz: Infixes_L(1): Reduplication: Suffixes?      #Seasonal tig- -VL- with other infixes (-in-/-um-), reduplication, and optional suffixes
 
 PATTERN Agentive1
 :AgentRedup :Stem(1) :Stem(2) Stem(1) Stem(2) Stem(3) AgentRedup: Suffixes?             #Agentive form
@@ -17,7 +17,7 @@ PATTERN Agentive1
 PATTERN Agentive2
 :Agent Stem(1) Stem(2) Stem(3) Agent: Suffixes?
 #:Agent DimRedup Agent:
-#:Agent Infx Agent:
+#:Agent Infixes_P Agent:
 #:Agent Redup Agent:
 :Agent SeasonN Agent:
 
