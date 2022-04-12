@@ -1,7 +1,7 @@
 PATTERN Verbs
 Stem(1): :Stem(1) Stem(2) Stem(3)                                                                  #Unaffixed root
 #Infixes_P
-#Redup
+Redup
 Sufx
 #DimRedup
 Pre1
@@ -16,8 +16,8 @@ Habitual
 #Stem(1): :Stem(1) Stem(2) :Redup_Infixes_2(1) :Stem(2) :Redup_Infixes_2(2) :Stem(2) Stem(3) Redup_Infixes_2(1):                                              #Plural infixation
 #Stem(1): :Stem(1) Stem(2) :Redup_Infixes_2(1) :Stem(2) :Redup_Infixes_2(2) :Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Redup_Infixes_2(1): Reduplication:    #Plural infixation with reduplication
 
-#PATTERN Redup
-#Stem(1): :Stem(1) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Reduplication:       #Full reduplication
+PATTERN Redup
+Stem(1): :Stem(1) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Reduplication:       #Full reduplication
 
 PATTERN Sufx
 Stem(1): :Stem(1) Stem(2) Stem(3) Suffixes
@@ -35,13 +35,13 @@ Stem(1): :Stem(1) Stem(2) Stem(3) Suffixes
 #:Stem(1) :Diminutive Stem(1): :Stem(1) Stem(2) :Redup_Infixes_2(1) :Stem(2) :Redup_Infixes_2(2) :Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Redup_Infixes_2(1): Reduplication: Suffixes? Diminutive:
 
 ### The next line is Dim Redup with the Redup pattern (full stem reduplication)
-#:Stem(1) :Diminutive Stem(1): :Stem(1) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Reduplication: Suffixes? Diminutive:                            #Culu- with full reduplication only (excluding infixes)
+:Stem(1) :Diminutive Stem(1): :Stem(1) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) Reduplication: Suffixes? Diminutive:                            #Culu- with full reduplication only (excluding infixes)
 
 PATTERN Pre1
 :Prefix1 Stem(1): :Stem(1) Stem(2) Stem(3) Prefix1: Suffixes?
 #:Prefix1 DimRedup Prefix1:
 #:Prefix1 Infixes_P Prefix1:
-#:Prefix1 Redup Prefix1:
+:Prefix1 Redup Prefix1:
 :Prefix1 Agentive1 Prefix1:
 :Prefix1 Agentive2 Prefix1:
 :Prefix1 SeasonN Prefix1:
@@ -50,7 +50,7 @@ PATTERN VoiAsp
 :VoiceAspect(1) Stem(1): :Stem(1) Stem(2) Stem(3) :VoiceAspect(2) VoiceAspect(1):
 #:VoiceAspect(1) DimRedup :VoiceAspect(2) VoiceAspect(1):
 #:VoiceAspect(1) Infixes_P :VoiceAspect(2) VoiceAspect(1):
-#:VoiceAspect(1) Redup :VoiceAspect(2) VoiceAspect(1):
+:VoiceAspect(1) Redup :VoiceAspect(2) VoiceAspect(1):
 :VoiceAspect(1) Agentive1 :VoiceAspect(2) VoiceAspect(1):
 :VoiceAspect(1) Agentive2 :VoiceAspect(2) VoiceAspect(1):
 :VoiceAspect(1) SeasonN :VoiceAspect(2) VoiceAspect(1):

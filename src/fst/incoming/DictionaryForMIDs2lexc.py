@@ -46,7 +46,7 @@ with ZipFile('DictionaryForMIDs/DictionaryForMIDs_HilEng_KVED.jar') as zf:
 
 cc = 'ANV'  # TODO name the continuation class (this idea stands from AdjectiveNounVerb)
 with open('content.lexd', 'w') as f:
-    print('LEXICON Stem(3)', file=f)
+    print('LEXICON Stem(4)', file=f)
     flag_dict = defaultdict(list)
     for line in lines:
         line = line.decode('utf8')
@@ -60,13 +60,19 @@ with open('content.lexd', 'w') as f:
                 new_stem = re.sub(find, replace, new_stem)
                 assert not re.search(find, new_stem)
         try:
-            s1, s2, s3 = re.match(r'([-bcdfghjklmnpqrstvwxyz%^]*)([aeiou\u0301])([-\u0301a-z%^]*)$', new_stem, flags=re.I).groups()
+            s1, s2, s3, s4, s5 = re.match(r'([-bcdfghjklmnpqrstvwxyz%^]*)([aeiou]\u0301?)([-bcdfghjklmnpqrstvwxyz%^]*[aeiou]?\u0301?)([-bcdfghjklmnpqrstvwxyz%^]?)([-\u0301a-z%^]*)$', new_stem, flags=re.I).groups()
             if not s1:
                 s1 = ':'
             if not s2:
                 raise ValueError(stem)
             if not s3:
                 s3 = ':'
+            if re.match(r'[aeiou]', s5):
+                s5 = s4 + s5
+            else:
+                s3 = s3 + s4
+            if not s5:
+                s5 = ':'
         except AttributeError:
             print(new_stem)
             continue
@@ -75,4 +81,4 @@ with open('content.lexd', 'w') as f:
         if '[01' in gloss:
             print('DEBUG', repr(line), gloss, gloss)
         gloss = gloss.replace('"', '%"')
-        print(f'{s1} {s2} {s3}  # {gloss} !{{{stem}}}', file=f)
+        print(f'{s1} {s2} {s3} {s5} # {gloss} !{{{stem}}}', file=f)

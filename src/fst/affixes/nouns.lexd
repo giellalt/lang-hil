@@ -12,13 +12,13 @@ PATTERN SeasonN
 PATTERN Agentive1
 :AgentRedup :Stem(1) :Stem(2) Stem(1) Stem(2) Stem(3) AgentRedup: Suffixes?             #Agentive form
 :AgentRedup :Stem(1) :Stem(2) Stem(1) Stem(2) Stem(3) AgentRedup: Suffixes?             #Agentive form
-#:AgentRedup :Stem(1) :Stem(2) Redup AgentRedup: Suffixes?                              #Agentive plus reduplication
+:AgentRedup :Stem(1) :Stem(2) Redup AgentRedup: Suffixes?                              #Agentive plus reduplication
 
 PATTERN Agentive2
 :Agent Stem(1) Stem(2) Stem(3) Agent: Suffixes?
 #:Agent DimRedup Agent:
 #:Agent Infixes_P Agent:
-#:Agent Redup Agent:
+:Agent Redup Agent:
 :Agent SeasonN Agent:
 
 ###########################################################
