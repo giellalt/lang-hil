@@ -1,0 +1,31 @@
+
+*** Compiling hil - Hiligaynon. ***
+
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /home/activedir_users/sshaccess/adamsnat/lang-hil/build-aux/missing autoconf
+Making all in .
+make[1]: Entering directory '/home/activedir_users/sshaccess/adamsnat/lang-hil'
+
+*** Compiling hil - Hiligaynon. ***
+
+CDPATH="${ZSH_VERSION+.}:" && cd . && /bin/bash /home/activedir_users/sshaccess/adamsnat/lang-hil/build-aux/missing autoconf
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/home/activedir_users/sshaccess/adamsnat/lang-hil'
+Making all in src
+make[1]: Entering directory '/home/activedir_users/sshaccess/adamsnat/lang-hil/src'
+Making all in fst
+make[2]: Entering directory '/home/activedir_users/sshaccess/adamsnat/lang-hil/src/fst'
+ cd ../.. && /bin/bash /home/activedir_users/sshaccess/adamsnat/lang-hil/build-aux/missing automake-1.15 --foreign src/fst/Makefile
+ cd ../.. && /bin/bash ./config.status src/fst/Makefile 
+config.status: creating src/fst/Makefile
+  GEN      lexicon.tmp.lexd
+  LEXD     lexicon.tmp.att
+/bin/bash: line 1:  4630 Killed                  /usr/bin/lexd lexicon.tmp.lexd lexicon.tmp.att
+Makefile:1025: recipe for target 'lexicon.tmp.att' failed
+make[2]: *** [lexicon.tmp.att] Error 137
+make[2]: *** Deleting file 'lexicon.tmp.att'
+make[2]: Leaving directory '/home/activedir_users/sshaccess/adamsnat/lang-hil/src/fst'
+Makefile:1199: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/home/activedir_users/sshaccess/adamsnat/lang-hil/src'
+Makefile:538: recipe for target 'all-recursive' failed
+make: *** [all-recursive] Error 1

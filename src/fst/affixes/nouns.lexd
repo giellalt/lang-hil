@@ -1,37 +1,43 @@
 PATTERN Nouns
-SeasonN
-Agentive1
-Agentive2
+SeasonNmlz_P
+Agentive1_P
+Agentive2_P
+Instrumental1_P
 
-PATTERN SeasonN
-:SeasonNmlz(1) Stem(1) :Stem(2) :SeasonNmlz(2) Stem(2) Stem(3) SeasonNmlz: Suffixes?                                                                                    #Seasonal tig- -VL- nominals and optional suffixes
-#:SeasonNmlz(1) Stem(1) :Infixes_L(1) :SeasonNmlz(2) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) SeasonNmlz: Infixes_L(1): Suffixes?                                                #Seasonal tig- -VL- with other infixes (-in-/-um-) and optional suffixes
-:SeasonNmlz(1) Stem(1) :Stem(2) :SeasonNmlz(2) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) SeasonNmlz: Reduplication: Suffixes?                                          #Seasonal tig- -VL- with reduplication and optional suffixes
-#:SeasonNmlz(1) Stem(1) :Infixes_L(1) :SeasonNmlz(2) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) :Stem(1) :Stem(2) :Stem(3) SeasonNmlz: Infixes_L(1): Reduplication: Suffixes?      #Seasonal tig- -VL- with other infixes (-in-/-um-), reduplication, and optional suffixes
+PATTERN SeasonNmlz_P
+:SeasonNmlz_L(1) Stem(1) :Stem(2) :SeasonNmlz_L(2) Stem(2) Stem(3) Stem(4) SeasonNmlz_L: Suffixes?                                                                                    #Seasonal tig- -VL- nominals and optional suffixes
+#:SeasonNmlz_L(1) Stem(1) :Infixes_L(1) :SeasonNmlz_L(2) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) SeasonNmlz_L: Infixes_L(1): Suffixes?                                                #Seasonal tig- -VL- with other infixes (-in-/-um-) and optional suffixes
+:SeasonNmlz_L(1) Stem(1) :Stem(2) :SeasonNmlz_L(2) Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) SeasonNmlz_L: Reduplication: Suffixes?                                          #Seasonal tig- -VL- with reduplication and optional suffixes
+#:SeasonNmlz_L(1) Stem(1) :Infixes_L(1) :SeasonNmlz_L(2) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) SeasonNmlz_L: Infixes_L(1): Reduplication: Suffixes?      #Seasonal tig- -VL- with other infixes (-in-/-um-), reduplication, and optional suffixes
 
-PATTERN Agentive1
-:AgentRedup :Stem(1) :Stem(2) Stem(1) Stem(2) Stem(3) AgentRedup: Suffixes?             #Agentive form
-:AgentRedup :Stem(1) :Stem(2) Stem(1) Stem(2) Stem(3) AgentRedup: Suffixes?             #Agentive form
-:AgentRedup :Stem(1) :Stem(2) Redup AgentRedup: Suffixes?                              #Agentive plus reduplication
+PATTERN Agentive1_P
+:Agentive1_L :Stem(1) :Stem(2) Stem(1) Stem(2) Stem(3) Stem(4) Agentive1_L: Suffixes?             #Agentive form
+:Agentive1_L :Stem(1) :Stem(2) Stem(1) Stem(2) Stem(3) Stem(4) Agentive1_L: Suffixes?             #Agentive form
+:Agentive1_L :Stem(1) :Stem(2) Redup Agentive1_L: Suffixes?                              #Agentive plus reduplication
 
-PATTERN Agentive2
-:Agent Stem(1) Stem(2) Stem(3) Agent: Suffixes?
-#:Agent DimRedup Agent:
-#:Agent Infixes_P Agent:
-:Agent Redup Agent:
-:Agent SeasonN Agent:
+PATTERN Agentive2_P
+:Agentive2_L Stem(1) Stem(2) Stem(3) Stem(4) Agentive2_L: Suffixes?
+#:Agentive2_L DimRedup Agentive2_L:
+#:Agentive2_L Infixes_P Agentive2_L:
+:Agentive2_L Redup Agentive2_L:
+:Agentive2_L SeasonNmlz_L Agentive2_L:
+
+PATTERN Instrumental1_P
+Stem(1): :Stem(1) Stem(2) :Instrumental1_L(1) :Stem(2) Stem(3) Stem(4) :Instrumental1_L(2) Instrumental1_L(1):                                                                 #Instrumental infixation
+#Stem(1): :Stem(1) Stem(2) :Instrumental1_L(1) :Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) :Instrumental1_L(2) Instrumental1_L(1): Reduplication:               #Instrumental infixation with reduplication
+
 
 ###########################################################
 
-LEXICON Agent
+LEXICON Agentive2_L
 <Ag><Hab>:pala
 <Ag>:taga
 <Ag>:tag
 <Ag>:manug
 
-LEXICON AgentRedup
+LEXICON Agentive1_L
 <Ag>:ma{N}
 
-LEXICON SeasonNmlz(2)
+LEXICON SeasonNmlz_L(2)
 <Nmlz><Time>:tig    :l
 <Nmlz><Time>:tag    :l
