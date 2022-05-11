@@ -2,6 +2,7 @@
 
 from collections import defaultdict
 import re
+from unicodedata import normalize
 from zipfile import ZipFile
 
 trans_table = [('á', 'a\u0301'),
@@ -84,4 +85,4 @@ with open('content.lexd', 'w') as f:
         if '[01' in gloss:
             print('DEBUG', repr(line), gloss, gloss)
         gloss = gloss.replace('"', '%"')
-        print(f'{s1} {s2} {s3} {s5} # {gloss} !{{{stem}}}', file=f)
+        print(normalize('NFC', f'{s1} {s2} {s3} {s5} # {gloss} !{{{stem}}}'), file=f)

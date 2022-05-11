@@ -9,18 +9,18 @@ VoiceAspect_P
 Habitual_P
 
 PATTERN FullStem_P
-%< Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) %>     ##Q: Can I just put the stem boundaries here like this? Is this the right syntax? Also, if the stem is split somewhere, do I need to insert stem boundaries in those patterns now?
+Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4)     ## TODO Q: Can I just put the stem boundaries here like this? Is this the right syntax? Also, if the stem is split somewhere, do I need to insert stem boundaries in those patterns now?
 
 #PATTERN Infixes_P
 #Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) Infixes_L(1):                                                                                            #Simple infixation
-#Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) Infixes_L(1): Reduplication:                                          #Simple infixation with reduplication
+#Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) Infixes_L(1): Reduplication_L:                                          #Simple infixation with reduplication
 #Stem(1): :Stem(1) Stem(2) :Instrumental1_L(1) :Stem(2) Stem(3) Stem(4) :Instrumental1_L(2) Instrumental1_L(1):                                                                 #Instrumental infixation
-#Stem(1): :Stem(1) Stem(2) :Instrumental1_L(1) :Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) :Instrumental1_L(2) Instrumental1_L(1): Reduplication:               #Instrumental infixation with reduplication
+#Stem(1): :Stem(1) Stem(2) :Instrumental1_L(1) :Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) :Instrumental1_L(2) Instrumental1_L(1): Reduplication_L:               #Instrumental infixation with reduplication
 #Stem(1): :Stem(1) Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) Stem(3) Stem(4) PluralVA_L(1):                                                        #Plural infixation
-#Stem(1): :Stem(1) Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) PluralVA_L(1): Reduplication:      #Plural infixation with reduplication
+#Stem(1): :Stem(1) Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) PluralVA_L(1): Reduplication_L:      #Plural infixation with reduplication
 
 PATTERN Reduplication_P
-FullStem_P :Stem(1) :Stem(2) :Stem(3) Stem(4) Reduplication:       #Full reduplication
+FullStem_P :Stem(1) :Stem(2) :Stem(3) Stem(4) Reduplication_L:       #Full reduplication
 
 PATTERN Suffixes_P
 FullStem_P Suffixes_L
@@ -31,32 +31,32 @@ FullStem_P Suffixes_L
 
 ### The next 6 lines are the Dim reduplication with the 6 lines from Infixes_P
 #:Stem(1) :Diminutive_L Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) Infixes_L(1): Suffixes_L? Diminutive_L:
-#:Stem(1) :Diminutive_L Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) Infixes_L(1): Reduplication: Suffixes_L? Diminutive_L:
+#:Stem(1) :Diminutive_L Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) Infixes_L(1): Reduplication_L: Suffixes_L? Diminutive_L:
 #:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) :Instrumental1_L(1) :Stem(2) Stem(3) Stem(4) :Instrumental1_L(2) Instrumental1_L(1): Suffixes_L? Diminutive_L:
-#:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) :Instrumental1_L(1) :Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) :Instrumental1_L(2) Instrumental1_L(1): Reduplication: Suffixes_L? Diminutive_L:
+#:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) :Instrumental1_L(1) :Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) :Instrumental1_L(2) Instrumental1_L(1): Reduplication_L: Suffixes_L? Diminutive_L:
 #:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) Stem(3) Stem(4) PluralVA_L(1): Suffixes_L? Diminutive_L:
-#:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) PluralVA_L(1): Reduplication: Suffixes_L? Diminutive_L:
+#:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) PluralVA_L(1): Reduplication_L: Suffixes_L? Diminutive_L:
 
 ### The next line is Dim Redup with the Redup pattern (full stem reduplication)
-:Stem(1) :Diminutive_L FullStem_P :Stem(1) :Stem(2) :Stem(3) Stem(4) Reduplication: Suffixes_L? Diminutive_L:                            #Culu- with full reduplication only (excluding infixes)
+:Stem(1) :Diminutive_L FullStem_P :Stem(1) :Stem(2) :Stem(3) Stem(4) Reduplication_L: Suffixes_L? Diminutive_L:                            #Culu- with full reduplication only (excluding infixes)
 
 PATTERN Prefix1_P
 :Prefix1_L FullStem_P Prefix1_L: Suffixes_L?
 #:Prefix1_L Diminutive_P Prefix1_L:
 #:Prefix1_L Infixes_P Prefix1_L:
 :Prefix1_L Reduplication_P Prefix1_L:
-:Prefix1_L Agentive1 Prefix1_L:
-:Prefix1_L Agentive2 Prefix1_L:
-:Prefix1_L SeasonN Prefix1_L:
+:Prefix1_L Agentive1_P Prefix1_L:
+:Prefix1_L Agentive2_P Prefix1_L:
+:Prefix1_L SeasonNmlz_P Prefix1_L:
 
 PATTERN VoiceAspect_P
 :VoiceAspect_L(1) FullStem_P :VoiceAspect_L(2) VoiceAspect_L(1):
 #:VoiceAspect_L(1) Diminutive_P :VoiceAspect_L(2) VoiceAspect_L(1):
 #:VoiceAspect_L(1) Infixes_P :VoiceAspect_L(2) VoiceAspect_L(1):
 :VoiceAspect_L(1) Reduplication_P :VoiceAspect_L(2) VoiceAspect_L(1):
-:VoiceAspect_L(1) Agentive1 :VoiceAspect_L(2) VoiceAspect_L(1):
-:VoiceAspect_L(1) Agentive2 :VoiceAspect_L(2) VoiceAspect_L(1):
-:VoiceAspect_L(1) SeasonN :VoiceAspect_L(2) VoiceAspect_L(1):
+:VoiceAspect_L(1) Agentive1_P :VoiceAspect_L(2) VoiceAspect_L(1):
+:VoiceAspect_L(1) Agentive2_P :VoiceAspect_L(2) VoiceAspect_L(1):
+:VoiceAspect_L(1) SeasonNmlz_P :VoiceAspect_L(2) VoiceAspect_L(1):
 :VoiceAspect_L(1) Prefix1_P :VoiceAspect_L(2) VoiceAspect_L(1):
 
 PATTERN Habitual_P
