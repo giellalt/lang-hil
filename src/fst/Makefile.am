@@ -30,7 +30,7 @@ lexicon.tmp.lexd: root.lexd $(LEXD_FILES)
 	$(AM_V_GEN)cat $^ > $@
 
 lexicon.tmp.att: lexicon.tmp.lexd
-	$(AM_V_LEXD)$(LEXD) -f $< $@
+	$(AM_V_LEXD)$(LEXD) $< $@
 
 lexicon.tmp.hfst: lexicon.tmp.att
 	$(AM_V_GEN)cat $<  \
