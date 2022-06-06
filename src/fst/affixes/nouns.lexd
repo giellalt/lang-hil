@@ -13,11 +13,11 @@ PATTERN SeasonNmlz_P
 PATTERN Agentive1_P
 :Agentive1_L :Stem(1) :Stem(2) Stem(1) Stem(2) Stem(3) Stem(4) Agentive1_L: Suffixes_L?             #Agentive form
 :Agentive1_L :Stem(1) :Stem(2) Stem(1) Stem(2) Stem(3) Stem(4) Agentive1_L: Suffixes_L?             #Agentive form
-:Agentive1_L :Stem(1) :Stem(2) Reduplication_P Agentive1_L: Suffixes_L?                              #Agentive plus reduplication
+:Agentive1_L :Stem(1) :Stem(2) Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) Reduplication_L: Agentive1_L: Suffixes_L?                              #Agentive plus reduplication
 
 PATTERN Agentive2_P
 :Agentive2_L Stem(1) Stem(2) Stem(3) Stem(4) Agentive2_L: Suffixes_L?
-#:Agentive2_L Diminutive_P Agentive2_L:
+:Agentive2_L Diminutive_P Agentive2_L:
 #:Agentive2_L Infixes_P Agentive2_L:
 :Agentive2_L Reduplication_P Agentive2_L:
 :Agentive2_L SeasonNmlz_L Agentive2_L:

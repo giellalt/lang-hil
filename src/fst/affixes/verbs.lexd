@@ -3,7 +3,7 @@ PATTERN Verbs
 #Infixes_P
 Reduplication_P
 Suffixes_P
-#Diminutive_P
+Diminutive_P
 Prefix1_P
 VoiceAspect_P
 Habitual_P
@@ -23,8 +23,8 @@ PATTERN Suffixes_P
 Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) Suffixes_L
 #Infixes_P Suffixes_L?                                                          #Optional suffixes to the infixed & reduplicated stems
 
-#PATTERN Diminutive_P
-#:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) Suffixes_L? Diminutive_L:          #Culu- with optional suffixes
+PATTERN Diminutive_P
+:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) Suffixes_L? Diminutive_L:          #Culu- with optional suffixes
 
 ### The next 6 lines are the Dim reduplication with the 6 lines from Infixes_P
 #:Stem(1) :Diminutive_L Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) Infixes_L(1): Suffixes_L? Diminutive_L:
@@ -39,16 +39,16 @@ Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) Suffixes_L
 
 PATTERN Prefix1_P
 :Prefix1_L Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) Prefix1_L: Suffixes_L?
-#:Prefix1_L Diminutive_P Prefix1_L:
-#:Prefix1_L Infixes_P Prefix1_L:
-:Prefix1_L Reduplication_P Prefix1_L:
+:Prefix1_L :Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) Suffixes_L? Diminutive_L: Prefix1_L:
+#:Prefix1_L Infixes_P Prefix1_L:        ##Commented out to cut down transducer size (infixation), should work with no stem combinatorics
+:Prefix1_L Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) :Stem(1) :Stem(2) :Stem(3) Stem(4) Reduplication_L: Prefix1_L:
 :Prefix1_L Agentive1_P Prefix1_L:
 :Prefix1_L Agentive2_P Prefix1_L:
 :Prefix1_L SeasonNmlz_P Prefix1_L:
 
 PATTERN VoiceAspect_P
 :VoiceAspect_L(1) Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) :VoiceAspect_L(2) VoiceAspect_L(1):
-#:VoiceAspect_L(1) Diminutive_P :VoiceAspect_L(2) VoiceAspect_L(1):
+:VoiceAspect_L(1) Diminutive_P :VoiceAspect_L(2) VoiceAspect_L(1):
 #:VoiceAspect_L(1) Infixes_P :VoiceAspect_L(2) VoiceAspect_L(1):
 :VoiceAspect_L(1) Reduplication_P :VoiceAspect_L(2) VoiceAspect_L(1):
 :VoiceAspect_L(1) Agentive1_P :VoiceAspect_L(2) VoiceAspect_L(1):
