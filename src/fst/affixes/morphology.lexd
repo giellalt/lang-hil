@@ -1,0 +1,245 @@
+###############################################################################
+## PATTERNS ##
+###############################################################################
+
+PATTERN Morphology
+Uninflected
+Reduplication
+Diminutive
+Infixes
+Affixes_1
+Affixes_2
+Affixes_3
+Affixes_4
+Affixes_5
+Affixes_6
+Affixes_7
+Affixes_8
+Affixes_9
+Affixes_10
+Affixes_11
+Affixes_12
+Affixes_13
+
+PATTERN Uninflected
+Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4)
+
+PATTERN Infixes                                                                                         ## Includes PluralVA and Instrumental infixation processes
+Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) Infixes_L(1):                                                                                     #Simple infixation
+Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) :Stem(2) :Stem(3) :Stem(1) Stem(2) Stem(3) Stem(4) Infixes_L(1): Reduplication_L:                                         #Simple infixation with reduplication
+Stem(1): :Stem(1) Stem(2) :Instrumental_L(1) :Stem(2) Stem(3) Stem(4) :Instrumental_L(2) Instrumental_L(1):                                                             #Instrumental infixation
+Stem(1): :Stem(1) :Stem(2) :Instrumental_L(1) :Stem(2) :Stem(3) :Stem(1) Stem(2) Stem(3) Stem(4) :Instrumental_L(2) Instrumental_L(1): Reduplication_L:                 #Instrumental infixation with reduplication
+Stem(1): :Stem(1) Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) Stem(3) Stem(4) PluralVA_L(1):                                                                #Plural infixation
+Stem(1): :Stem(1) :Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) :Stem(3) :Stem(1) Stem(2) Stem(3) Stem(4) PluralVA_L(1): Reduplication_L:                    #Plural infixation with reduplication
+
+PATTERN Reduplication
+Stem(1): :Stem(1) :Stem(2) :Stem(3) :Stem(1) Stem(2) Stem(3) Stem(4) Reduplication_L:               #Full reduplication
+
+PATTERN Diminutive
+:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) Stem(3) Stem(4) A13_L? Diminutive_L:              #Culu- with optional suffixes
+## The next 6 lines are the Dim reduplication with the 6 lines from Infixes_P and optional suffixes
+:Stem(1) :Diminutive_L Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) Stem(2) Stem(3) Stem(4) Infixes_L(1): A13_L? Diminutive_L:
+:Stem(1) :Diminutive_L Stem(1): :Stem(1) :Infixes_L(1) :Infixes_L(2) :Stem(2) :Stem(3) :Stem(1) Stem(2) Stem(3) Stem(4) Infixes_L(1): Reduplication_L: A13_L? Diminutive_L:
+:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) :Instrumental_L(1) :Stem(2) Stem(3) Stem(4) :Instrumental_L(2) Instrumental_L(1): A13_L? Diminutive_L:
+:Stem(1) :Diminutive_L Stem(1): :Stem(1) :Stem(2) :Instrumental_L(1) :Stem(2) :Stem(3) :Stem(1) Stem(2) Stem(3) Stem(4) :Instrumental_L(2) Instrumental_L(1): Reduplication_L: A13_L? Diminutive_L:
+:Stem(1) :Diminutive_L Stem(1): :Stem(1) Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) Stem(3) Stem(4) PluralVA_L(1): A13_L? Diminutive_L:
+:Stem(1) :Diminutive_L Stem(1): :Stem(1) :Stem(2) :PluralVA_L(1) :Stem(2) :PluralVA_L(2) :Stem(2) :Stem(3) :Stem(1) Stem(2) Stem(3) Stem(4) PluralVA_L(1): Reduplication_L: A13_L? Diminutive_L:
+
+PATTERN Affixes_1
+:A1_L Uninflected A1_L: A13_L?
+#:A1_L :A2_L? :A4_L? :A5_L? :A6_L? :A7_L? :A10_L? :A11_L? :A12_L? Uninflected A1_L: A2_L:? A4_L:? A5_L:? A6_L:? A7_L:? A10_L:? A11_L:? A12_L:? A13_L?
+
+PATTERN Affixes_2
+:A2_L Uninflected A2_L: A13_L?
+#:A1_L? :A2_L :A4_L? :A5_L? :A6_L? :A7_L? :A10_L? :A11_L? :A12_L? Uninflected A1_L:? A2_L: A4_L:? A5_L:? A6_L:? A7_L:? A10_L:? A11_L:? A12_L:? A13_L?
+
+PATTERN Affixes_3
+:A3_L(1) Uninflected :A3_L(2) A3_L(1): A13_L?
+#:A1_L? :A2_L? :A3_L(1) :A4_L? :A5_L? :A6_L? :A7_L? :A10_L? :A11_L? :A12_L? Uninflected A1_L:? A2_L:? A3_L: A4_L:? A5_L:? A6_L:? A7_L:? A10_L:? A11_L:? A12_L:? :A3_L(2) A13_L?
+
+PATTERN Affixes_4
+:A4_L Uninflected A4_L: A13_L?
+#:A1_L? :A2_L? :A4_L :A5_L? :A6_L? :A7_L? :A10_L? :A11_L? :A12_L? Uninflected A1_L:? A2_L:? A4_L: A5_L:? A6_L:? A7_L:? A10_L:? A11_L:? A12_L:? A13_L?
+
+PATTERN Affixes_5
+:A5_L Uninflected A5_L: A13_L?
+#:A1_L? :A2_L? :A4_L? :A5_L :A6_L? :A7_L? :A10_L? :A11_L? :A12_L? Uninflected A1_L:? A2_L:? A4_L:? A5_L: A6_L:? A7_L:? A10_L:? A11_L:? A12_L:? A13_L?
+
+PATTERN Affixes_6
+:A6_L Uninflected A6_L: A13_L?
+#:A1_L? :A2_L? :A4_L? :A5_L? :A6_L :A7_L? :A10_L? :A11_L? :A12_L? Uninflected A1_L:? A2_L:? A4_L:? A5_L:? A6_L: A7_L:? A10_L:? A11_L:? A12_L:? A13_L?
+
+PATTERN Affixes_7
+:A7_L Uninflected A7_L: A13_L?
+#:A1_L? :A2_L? :A4_L? :A5_L? :A6_L? :A7_L :A10_L? :A11_L? :A12_L? Uninflected A1_L:? A2_L:? A4_L:? A5_L:? A6_L:? A7_L: A10_L:? A11_L:? A12_L:? A13_L?
+
+PATTERN Affixes_8
+:A8a_L(1) Stem(1): :Stem(1) :A8a_L(2) Stem(2) Stem(3) Stem(4) A8a_L(1): :A8a_L(3) A13_L?
+:A8b_L(1) Stem(1): :Stem(1) :Stem(2) :A8b_L(2) Stem(2) Stem(3) Stem(4) A8b_L(1): :A8b_L(3) A13_L?
+:A8c_L(1) Stem(1): :Stem(1) Stem(2) :Stem(1) :Stem(2) Stem(3) Stem(4) A8c_L(1): A8c_L(2) A13_L?
+
+PATTERN Affixes_9
+:A9_L(1) Uninflected A9_L(1): A9_L(2) A13_L?
+#:A1_L? :A2_L? :A4_L? :A5_L? :A6_L? :A7_L? :A9_L(1) :A10_L? :A11_L? :A12_L? Uninflected A1_L:? A2_L:? A4_L:? A5_L:? A6_L:? A7_L:? A9_L(1): A10_L:? A11_L:? A12_L:? A9_L(2) A13_L?
+
+PATTERN Affixes_10
+:A10_L(1) Uninflected A10_L(1): A13_L?              #I have ignored A10_L(2) for now since it's an infix already covered in the other patterns
+#:A1_L? :A2_L? :A4_L? :A5_L? :A6_L? :A7_L? :A10_L :A11_L? :A12_L? Uninflected A1_L:? A2_L:? A4_L:? A5_L:? A6_L:? A7_L:? A10_L: A11_L:? A12_L:? A13_L?
+
+PATTERN Affixes_11
+:A11_L Uninflected A11_L: A13_L?
+#:A1_L? :A2_L? :A4_L? :A5_L? :A6_L? :A7_L? :A10_L? :A11_L :A12_L? Uninflected A1_L:? A2_L:? A4_L:? A5_L:? A6_L:? A7_L:? A10_L:? A11_L: A12_L:? A13_L?
+
+PATTERN Affixes_12
+:A12_L Uninflected A12_L: A13_L?
+#:A1_L? :A2_L? :A4_L? :A5_L? :A6_L? :A7_L? :A10_L? :A11_L? :A12_L Uninflected A1_L:? A2_L:? A4_L:? A5_L:? A6_L:? A7_L:? A10_L:? A11_L:? A12_L: A13_L?
+
+PATTERN Affixes_13
+Uninflected A13_L
+#:A1_L? :A2_L? :A4_L? :A5_L? :A6_L? :A7_L? :A10_L? :A11_L? :A12_L? Uninflected A1_L:? A2_L:? A4_L:? A5_L:? A6_L:? A7_L:? A10_L:? A11_L:? A12_L:? A13_L
+
+###############################################################################
+## LEXICONS ##
+###############################################################################
+
+LEXICON Reduplication_L                     #How to include different stress patterns for these different functions?? Likely will need different patterns for each.
+<Aug>:
+<Dim>:
+<Distr>:
+<Iter>:
+
+LEXICON Diminutive_L
+<Dim>:ulu                                                               #Diminutive reduplicative prefix Culu-
+
+LEXICON PluralVA_L(2)
+<PlAg>:l  :l
+
+LEXICON Instrumental_L(2)
+<Nmlz><Ins><ActV>:l     :
+<Nmlz><Ins><ObjV>:l     :on
+<Nmlz><Ins><RecV>:l     :an
+
+LEXICON Infixes_L(2)                       #Infixes. Other infixes must be coded into the patterns (Vl, CV, etc.)
+<Intens>:i              :n
+<Ptcp>:i                :n
+<Ind><ActV><Real>:u     :m
+
+LEXICON A1_L
+<Purp>:pang                         #This pang is not subject to N assimilation
+
+LEXICON A2_L
+<Supl>:pinaka
+
+LEXICON A3_L(2)
+<V><Ind><ActV><Real><Pfv>:nag          :
+<V><Ind><ActV><Real><Ipfv>:naga        :
+<V><Ind><ActV><Irr><Pfv>:mag           :
+<V><Ind><ActV><Irr><Ipfv>:maga         :
+<V><Ind><ObjV><Real><Pfv>:gin          :
+<V><Ind><ObjV><Real><Ipfv>:gina        :
+<V><Ind><ObjV><Irr><Pfv>:              :on
+<V><Ind><ObjV><Irr><Ipfv>:paga         :on
+<V><Ind><InsV><Real><Pfv>:gin          :
+<V><Ind><InsV><Real><Ipfv>:gina        :
+<V><Ind><InsV><Irr><Pfv>:i             :
+<V><Ind><InsV><Irr><Ipfv>:iga          :
+<V><Ind><RecV><Real><Pfv>:gin          :an
+<V><Ind><RecV><Real><Ipfv>:gina        :an
+<V><Ind><RecV><Irr><Pfv>:              :an
+<V><Ind><RecV><Irr><Ipfv>:paga         :an
+<V><Ind><ActV><Real><Hab>:na{N}        :
+<V><Ind><ActV><Real><Hab>:na{N}a       :               #This affix is occasionally used instead of na{N} (nangamuyo). Is it phonologically conditioned? Nang+ka?
+<V><Ind><ActV><Irr><Hab>:ma{N}         :
+<V><Ind><ActV><Irr><Hab>:ma{N}a        :               #This affix is occasionally used instead of ma{N} (mangamuyo). Is it phonologically conditioned? Mang+ka?
+<V><Ind><ActV><Real><Coop>:nakig       :
+<V><Ind><ActV><Irr><Coop>:makig        :
+<V><Deo><ActV><Real>:naka              :
+<V><Deo><ActV><Irr>:maka               :
+<V><Deo><ObjV><Real>:na                :
+<V><Deo><ObjV><Irr>:ma                 :
+<V><Deo><InsV><Real>:na                :
+<V><Deo><InsV><Irr>:ma                 :
+<V><Deo><RecV><Real>:na                :an
+<V><Deo><RecV><Irr>:ma                 :an
+<Ger>:pag                              :
+<V><Imp><ActV>:pag                     :
+<V><Imp><ObjV>:pag                     :a
+<V><Imp><InsV>:pag-i                   :
+<V><Imp><RecV>:pag                     :i
+<V><Imp><ObjV>:                        :a
+<V><Imp><InsV>:i                       :
+<V><Imp><RecV>:                        :i
+<V><Imp><ObjV>:pag                     :on
+<V><Imp><RecV>:pag                     :an
+
+LEXICON A4_L
+<Coop>:pakig
+<Ins>:inug
+<Mate>:ka                           #Person Nmlz (___ mate) Better tag here?
+<Fellow>:isigka                     #Person Nmlz (Fellow ___)Better tag here?
+
+LEXICON A5_L
+<Hab>:pa{N}
+<Hab>:pa{N}a                        #This affix is occasionally used instead of Pa{N} (Pangabudlay). Is it phonologically conditioned? Pang+ka?
+
+LEXICON A6_L
+<Caus>:pa
+
+LEXICON A7_L
+<Stat>:ka
+
+LEXICON A8a_L(3)                     #Are there semantic differences between the different Adj. inflections that can be included in the tags?
+<A>:ma         :       :
+<A>:ma         :       :on
+<A>:ma         :in     :on
+<A>:           :       :on
+<A>:           :       :anon
+<A>:           :       :non
+<Prosp>:manug  :       :
+
+LEXICON A8b_L(3)
+<A><Caus>:maka :l      :           #Maka-VL- adjectives with optional -on (-Vl- will come in pattern)
+<A><Caus>:maka :l      :on         #Maka-VL- adjectives with optional -on (-Vl- will come in pattern)
+
+LEXICON A8c_L(2)
+<A><Caus>:maka :           #Maka-CV- adjectives (CV will come in pattern)
+<A><Caus>:maka :on         #Maka-CV- adjectives (CV will come in pattern)
+
+LEXICON A9_L(2)
+<Stat>:ka               :
+<Nmlz><Prosp>:ka        :on
+<Nmlz><Col>:ka          :an
+<Nmlz><Msmt>:ka         :on         #Measurement. Better tag?
+
+LEXICON A10_L(2)
+#<Dim>:            :ulu            #This is commented out because although it comes in this order, this pattern is already expressed in the Diminutive pattern
+<Nmlz><Area>:tig   :               #Time/Season nouns. Area = Areal (time/place/situation)
+<Nmlz><Area>:tag   :               #Optional -Vl- must be coded into the pattern
+<Distr>:tag        :
+<Mltp>:maka        :
+<Ag><Hab>:pala     :
+<Ag>:taga          :               #Are taga- ang tag- in free variation? What about other agentive affixes?
+<Ag>:tag           :
+<Ag>:manug         :
+
+LEXICON A11_L
+<Ag>:ma{N}
+
+LEXICON A12_L
+<Invol>:ha                          #Invol = Involuntary, accidental
+<Invol>:hi
+<Ptcp>:ni                           #How to make this (partially?) phonologically conditioned?
+
+LEXICON A13_L
+<Recp>:anay
+<Recp>:ay                           #Are the two reciprocal suffixes in free variation?
+
+###############################################################################
+## QUESTIONS, COMMENTS, AND TODOS ##
+###############################################################################
+## All reduplicative morphology must be encoded as a Pattern and not as a lexicon
+## Is it worth breaking up the morphology into lexical class categories (nouns, verbs, adjectives, etc.)? As they aren't true categories in the language and while words do function in these broad categories in context they often borrow morphology
+## Similar to the above comment, should I include a <V> tag? How to treat verbs nominalized only syntactically (not morphologically)? (Ex: Ang nagabasa)
+## When there is more than one affix for a function (i.e. adjectives, distributives, diminutives), should I have a different tag for each?
+## The problem with the patterns currently is that only suffix patterns can be listed as optional because that still puts the tags at the end. Also A3, A8, A9, and A10 (ulu?) have multiple parts so they even more so can't be listed as optional.
+## How do I treat abbreviations? ('ka, 'ga, etc.)

@@ -21,6 +21,7 @@ HFST_LEXC_LOCAL_FLAGS=
 ####### Morphology source file defs: ########
 
 LEXD_FILES=\
+			 affixes/morphology.lexd \
 			 affixes/verbs.lexd 	 \
 			 affixes/nouns.lexd 	 \
 			 stems/content.lexd 	 \
