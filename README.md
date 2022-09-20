@@ -38,8 +38,6 @@ Documentation
 
 Documentation can be found at:
 
-- [In source documentation generated with github
-   pages](https://gilellalt.github.io/lang-hil/)
 -   <https://giellalt.uit.no/lang/hildoc/index.html>
 -   <https://giellalt.uit.no/index.html>
 
