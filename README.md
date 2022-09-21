@@ -38,7 +38,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/hildoc/index.html>
+- [Language specific documentation](https://giellalt.github.io/lang-hil/)
 -   <https://giellalt.uit.no/index.html>
 
 Core dependencies
