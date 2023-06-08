@@ -5,4 +5,4 @@ version = "0.1.0"
 system_pkg_id = "no.divvun.MacDivvun.hil"
 
 [windows]
-system_product_code = "{REPLACE_WITH_REAL_SYSTEM_PROD_CODE}_is1"
+system_product_code = "{5C844BF8-2DF2-41C4-AFE0-345F73CE0449}_is1"
