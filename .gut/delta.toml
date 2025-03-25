@@ -3,7 +3,8 @@ rev_id = 204
 template_sha = "8eab0289bf8affc67c3fd50e60d031c9ba59c3e5"
 
 [replacements]
-__REPO__ = "lang-zxx"
-__UND2C__ = "zxx"
-__UNDEFINED__ = "No linguistic content"
-__UND__ = "zxx"
+__LICENSE__ = "LGPLv3"
+__REPO__ = "lang-hil"
+__UND2C__ = "hil"
+__UNDEFINED__ = "Hiligaynon"
+__UND__ = "hil"
