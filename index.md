@@ -4,7 +4,8 @@
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-hil%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-hil)](https://github.com/giellalt/lang-hil/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-hil)](https://github.com/giellalt/lang-hil/issues)
-[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-hil/main/badge.svg)](https://github.com/giellalt/lang-hil/actions)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-hil?label=CI)](https://builds.giellalt.org/pipelines/lang-hil/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/hili1240)
 
 This page documents the work on the **Hiligaynon language model**. 
 
