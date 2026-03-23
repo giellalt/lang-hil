@@ -212,7 +212,7 @@ gt_CONFIG_FILES
 # PKG_CHECK_MODULES(LEXD, lexd >= 1.1.0)
 AC_PATH_PROG([LEXD], [lexd], [no])
 AS_IF([test "x${LEXD}" == xno],
-        [AC_MSG_ERROR([LexD is missing, please install!])
+        [gt_MSG_ERROR([LexD is missing, please install!])
     ])
 
 ############ END: Language-specific scripts. #############
