@@ -35,13 +35,13 @@ LEXD_FILES=\
 			stems/content.lexd 	\
 			stems/uninflected.lexd
 
-lexicon.tmp.lexd: root.lexd $(LEXD_FILES)
-	$(AM_V_GEN)cat $^ > $@
+.generated/lexicon.tmp.lexd: $(GENDIR) root.lexd $(LEXD_FILES)
+	$(AM_V_GEN)cat root.lexd $(LEXD_FILES) > $@
 
-lexicon.tmp.att: lexicon.tmp.lexd
+.generated/lexicon.tmp.att: .generated/lexicon.tmp.lexd
 	$(AM_V_LEXD)$(LEXD) -f $< $@
 
-lexicon.tmp.hfst: lexicon.tmp.att
+.generated/lexicon.tmp.hfst: .generated/lexicon.tmp.att
 	$(AM_V_GEN)cat $<  \
 		| sed -E 's/\t<(@[A-Z]\.LEX\.[A-Za-z0-9]+@)>\t/\t\1\t/g' \
 		| sed -E 's/\t<([^\t]+)>\t/\t+\1\t/g' \
