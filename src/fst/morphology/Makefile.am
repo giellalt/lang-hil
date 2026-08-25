@@ -28,27 +28,13 @@ endif
 
 ####### Morphology source file defs: ########
 
+GT_LEXD_ROOT=root.lexd
 
-LEXD_FILES=\
+GT_LEXD_SRCS=\
 			affixes/verbs.lexd 	\
 			affixes/nouns.lexd 	\
 			stems/content.lexd 	\
 			stems/uninflected.lexd
-
-.generated/lexicon.tmp.lexd: $(GENDIR) root.lexd $(LEXD_FILES)
-	$(AM_V_GEN)cat root.lexd $(LEXD_FILES) > $@
-
-.generated/lexicon.tmp.att: .generated/lexicon.tmp.lexd
-	$(AM_V_LEXD)$(LEXD) -f $< $@
-
-.generated/lexicon.tmp.hfst: .generated/lexicon.tmp.att
-	$(AM_V_GEN)cat $<  \
-		| sed -E 's/\t<(@[A-Z]\.LEX\.[A-Za-z0-9]+@)>\t/\t\1\t/g' \
-		| sed -E 's/\t<([^\t]+)>\t/\t+\1\t/g' \
-		| $(HFST_TXT2FST) $(HFST_FORMAT) -o $@
-# first sed is <X> → +X
-
-
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -121,6 +107,7 @@ GIELLA_LOCAL_TARGETS=
 include $(srcdir)/Makefile.modifications-local.am
 include $(srcdir)/Makefile.modifications-phon.am
 include $(top_srcdir)/../giella-core/am-shared/src-morphology-dir-include.am
+include $(top_srcdir)/../giella-core/am-shared/lexd-include.am
 
 # vim: set ft=automake:
 include $(top_srcdir)/../giella-core/am-shared/devtest-include.am
